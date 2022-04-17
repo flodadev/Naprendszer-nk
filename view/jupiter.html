@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Jupiter</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/jupiter.png">
+</head>
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="../view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="../view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="../view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="../view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="../view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="../view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="../view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="../view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <div class="mx-auto container-main">
+            <main role="main" class="main">
+                <section class="section-bevezetes">
+                    <h1 class="cim1 text-center mx-4" id="sziasztok-urutazok">Sziasztok Űrutazók!</h1>
+                    <p class="text-center">                
+                        Köszöntelek benneteket felfedezőtúránk hatodik állomásánál, a Naprendszer legnagyobb bolygójánál, a Jupiternél! Elérkeztünk Naprendszerünk első gázóriásához. Hogy miért is gázóriás? A válasz igen egyszerű. A Jupiternek és a többi gázbolygónak nincs szilárd felszíne. Nevét a római mitológia főistenéről kapta. Ezen felül viszont még rengeteg érdekességet rejteget nekünk a Jupiter. Tartsatok velem, fedezzük fel együtt Naprendszerünk legnagyobb bolygóját!
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-altalanos">
+                    <div class="grid-container">
+                        <div class="w-50 mx-auto row">
+                            <div class="col-xl-6 colList">
+                                <ul class="altalanos-info-list">
+                                    <li class="li-tavolsag">Naptól való távolság: 778,3 millió km</li>
+                                    <li class="li-homerseklet">Hőmérséklet a felhők tetején: -110 °C</li>
+                                    <li class="li-atmero">Átmérő: 142 984 km</li>
+                                    <li class="li-tomeg">Tömeg (Föld = 1): 318</li>
+                                    <li class="li-hold">Holdak száma: 63</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 colImage">
+                                <img src="../img/planets/jupiter.png" id="imgJupiter" alt="Jupiter">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mx-4">
+                        A Jupiter a Naptól számított ötödik bolygó és messze a legnagyobb is. Tömege kétszer akkora, mint az összes többi bolygóé együttvéve. A Jupiter csíkja és örvényei valójában ammóniából és vízből álló hideg, szeles felhők, melyek a hidrogénből és héliumból álló légkörben lebegnek. Ikonikus, Nagy Vörös Foltja egy, a Földnél is nagyobb óriás vihar, mely több száz éve tombol.
+                    </p>
+                    <p class="mx-4">
+                        Ha nem lenne elég különleges mérete és tömege miatt, a Jupitert több tucat hold veszi körül, melyből a későbbiekben csak a két legismertebbet és legjelentősebbet fogjuk megvizsgálni. Ezek az Io és a Europa. A Jupiter az első bolygó a sorban, amelynek vannak gyűrűi, bár ezek a gyűrűk nem olyan látványosak, mint amilyenekkel a <a id="linkBolygo" href="../view/szaturnusz.html">Szaturnusz</a> rendelkezik, mert míg a Jupiter gyűrűi porból és apró törmelékből áll, addig a Szaturnuszé jégből.
+                    </p>
+                    <p class="mx-4">
+                        Átmérője 142 984 km. Ez 11-szer szélesebb mint a Föld. Távolsága a Naptól, átlagosan 778 millió km, ami 5,2 Csillagászati Egységnek felel meg. Ebből a távolságból átlagosan 43 percbe telik, míg a Napból érkező fény eléri a Jupitert.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-palya">
+                    <h2 class="text-center mx-4 mt-4">Pálya</h2>
+                    <p class="mx-4">
+                        Mintegy ötször messzebb van, mint a Föld, de a Naptól való távolsága nem állandó. Pályája elliptikus, és 76,1 millió km különbség van a napközel és a naptávol között. A Jupiter forgástengelye 86,9 fokos szöget zár be a keringési síkkal, ami azt jelenti, hogy nincsenek szembetűnő évszakjai. A bolygó a gyors tengelyforgás miatt egyenlítőjénél kidudorodik, emiatt egy lapult gömb a kinézete.
+                    </p>
+                    <p class="mx-4">
+                        A Naprendszerben a Jupiternek van a legrövidebb napja. Egy nap a Jupiteren mindössze 10 óra. Távolsága miatt viszont egy év már sokkal sokkal hosszabb. A bolygó 12 földi év alatt tesz egy teljes kört a Nap körül.
+                    </p>           
+
+                    <div class="mx-auto mb-2 container container-palya">
+                        <img src="../img/planets/Jupiter/orbitjupiter.gif" alt="A Jupiter pályája">
+                        <figcaption class="text-center">A Jupiter pályája</figcaption>                                 
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-szerkezet">
+                    <h2 class="text-center mx-4 mt-4">Szerkezet</h2>
+                    <p class="mx-4">
+                        Bár a Jupitre a legnagyobb tömegű bolygó, a nagy térfogat következtében sűrűsége kicsiny. Összetétele leginkább a Naphoz hasonlít. A Jupiter hidrogénje és héliuma légnemű állapotban van a bolygó külső részén, ahol a hőmérséklete kb. -110°C. Közeledve a központ felé, a nyomás és a sűrűség, valamint a hőmérséklet növekszik. A gázok állapota is ennek megfelelően változik. Kb. 7000 kilóméteres mélységben 2000 °C fokon a gázok már inkább folyadékként viselkednek, míg 14 000 km-nél 5000 °C mellett a hidrogén már fémes hidrogénné tömörül és olvadt fémként viselkedik. Mélyen a bolygó belsejében, 60 000 km mélységben kőzet és fém keverékéből álló szilárd mag van. Ez a Jupiter tömegéhez képes kicsi, de tízszer akkora tömegű, mint a Föld.
+                    </p>
+                    
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Jupiter/structurejupiter.jpg" alt="A Jupiter szerkezete">
+                        <figcaption class="text-center">A Jupiter szerkezete</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+                
+                <section class="section-felszin">
+                    <h2 class="text-center mx-4 mt-4">Felszín</h2>
+                    <p class="mx-4">
+                        Mivel a Jupiter esetében egy gázóriásról beszélünk, ezért nem rendelkezik valódi felszínnel. A Bolygó többnyire kavargó gázokból és folyadékokból áll. Bár egy űrhajónak nem lenne hová leszállnia a Jupiteren, de nem is tudna sértetlenól átrepülni rajta. Ugyanis a bolygó mélyén uralkodó extrém nyomás és hőmérséklet megolvasztja és elpárologtatja a bolygóba berepülni próbáló űrhajókat.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/jupiter.glb" camera-controls alt="A Jupiter 3D-s modellje"></model-viewer>
+                    <figcaption class="mb-4 text-center">A Jupiter 3D-s modellje</figcaption>    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-legkor">
+                    <h2 class="text-center mx-4 mt-4">Légkör</h2>
+                    <p class="mx-4">
+                        A Jupiter légkörében a hidrogén (89,8%) a leggyakoribb gáz. A maradék hélium és egyszerű hidrogénvegyületek (10,25%). Például: metán, ammónia, víz, etán, acetilén, propán. Ezek a vegyületek kondenzálódnak a légkör különböző színű felhőivé. A légkör hőmérséklete lefelé haladva fokozatosan növekszik, ezért különböző típusú felhők képződnek. A hőmérséklet-különbségek hatására heves, turbulens áramlások jönnek létre, ez okozza a csíkozottságot. A Jupiter emelkedő, hűvös, fehér sávjait zónáknak, míg vörösesbarna, leszálló, melegebb részeit sávoknak nevezik.
+                    </p>
+                    <p class="mx-4">
+                        A különböző kémiai összetételű felhők a légkör különböző magasságaiban képződnek, ammónium-hidroszulfid, ammónia és jégkristály felhők jönnek létre. A felemelkedő meleg gázok és a leszálló hideg gázok erős áramlásokat, örvényeket hoznak létre. A szelek sebessége meghaladja a 400 km/h-t. Óriási kiterjedésű viharok jönnek léte, melyek közül a legnevezetesebb a Nagy Vörös Folt. A Földnél is nagyobb, 340 évvel ezelőtt észlelték legelőször és azóta is tombol.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-magnetoszfera">
+                    <h2 class="text-center mx-4 mt-4">Magnetoszféra</h2>
+                    <p class="mx-4">
+                        A Jupiternek kiterjedt és erős mágneses mezeje van, melyet a benne keletkező örvényáramok hoznak létre a fémes hidrogénben. A mágneses pólusokat összekötő tengely 11 fokos szöget zár be a forgástengellyel. A mágneses mező húszezerszeresen múlja felül a földit. A Jupiteren is sarki fény keletkezik az északi és déli pólusnál. A mágneses mező által befogott töltött részecskékből a Jupiter egyenlítője mentén korong képződik. Ebben a korongban elektromos áramlás van. A magnetoszféra csóvája egyes szakemberek szerint 600 millió km hosszú is lehet.
+                    </p>
+
+                    <div class="mx-auto mb-4 container container-felepites">
+                        <img src="../img/planets/Jupiter/magnetospherejupiter.jpg" alt="A Jupiter mágneses tere">
+                        <figcaption class="text-center">A Jupiter mágneses tere</figcaption>                                            
+                    </div>
+                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-elet">
+                    <h2 class="text-center mx-4 mt-4">Élet a bolygón</h2>
+                    <p class="mx-4">
+                        A Jupiter környezete valószínűleg nem kedvez az általunk ismert életnek. A bolygót jellemző hőmérséklet, nyomás és anyagok valószínű túl szélsőségesek és illékonyak ahhoz, hogy bármiféle élőlény alkalmazkodni tudjon hozzájuk. Ám míg a Jupiter valószínűtlen hely az élőlények számára, addig ez a több tucat holdjáról nem mondható el. Az Europa az egyik legavlószínűbb hely arra, hogy a Naprendszerünkben, a Földön kívül máshol is életet találjunk. Bizonyítékok vannak arra, hogy közvetlenül az Europa jeges kérge alatt hatalmas óceán húzódik, mely alkalmas lehet az élet kialakulásához.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-holdak">
+                    <h2 class="text-center mx-4 mt-4">Holdak</h2>
+                    <p class="mx-4">
+                        Mint azt már fejezetünk elején említettem, a Jupiternek több tucat holdja van, viszont ebből a két legjelentősebb kerül bemutatásra. Ezek pedig az Io és az Europa.
+                    </p>
+
+                    <h3 class="text-center mx-4 mt-4">Io</h3>
+                    <p class="mx-4">
+                        Távolsága a Jupitertől 421.000 km, átmérője 3643 km. Az Io kicsit nagyobb és sűrűbb, mint a Föld holdja. Az Io a vulkanikus mélyedések, kalderák, hasadékok, lávafolyások igen színes világa. E hold természetét először a két Voyager szonda derítette föl, majd a majd a Galileo-küldetés vizsgálta. Az Io a Naprendszer legvulkanikusabb égitestje.
+                    </p>
+                    <p class="mx-4">
+                        Az Ionak vékony, szilikátokból álló kérge van, amely egy olvadt szilikátokból álló réteget vesz körül, ez alatt helyezkedik el a viszonylag nagy és vasban gazdag mag. Az Iot a rá ható árapály erők melegítik fel. A vulkanikus jelenségek az egész holdon megfigyelhetők. Több mint 80 nagyobb aktív vulkánt és 300-nál több kürtőt azonosítottak. Találtak „tollaknak” nevezett alakzatokat is a felszínen, melyek inkább gejzírekre hasonlítanak. Túlfűtött kéndioxid lövell ki belőlük. A vulkanikus forró pontok hőmérséklete 1230 Celsius fok, míg másutt mínusz 153 Celsius fok.
+                    </p>
+                    <div class="mx-auto mb-4 container container-felepites">
+                        <img src="../img/planets/Jupiter/io.png" alt="Io">                                                         
+                    </div>
+
+                    <h3 class="text-center mx-4 mt-4">Europa</h3>
+                    <p class="mx-4">
+                        Távolsága a Jupitertől 670.900 km, átmérője 3122 km. Az Európa jéggel borított, gömb-alakú szikla, melyet már 400 éve vizsgálnak, de igazi természetére csak akkor derült fény, amikor a Galileo űrszonda tanulmányozta. A Jupiter negyedik legnagyobb holdja elkáprázató világ. Az Európa néhányszor tíz km vastag kérge alatt folyékony óceán lehet. E 80-170 km vastag vízréteg több vizet tartalmaz, mint a földi óceánok, s teret nyújthat az életnek is.
+                    </p>
+                    <p class="mx-4">
+                        Legbeljebb egy sziklás köpeny van, mely a fémes magot veszi körül. A felszín fiatal, jeges síkságokból, és töredezett alakzatokból áll. Hosszú, sötét színű, akár több ezer kmes vonalak húzódnak rajta. A kialakulásukra vonatkozó egyik elmélet az, hogy a mélyből feláramló meleg víz megolvasztja a felszín jegét, majd az összetörik és elmozdul. A víz a felszínre kerül, de azonnal meg is fagy.
+                    </p>
+                    <div class="mx-auto mb-4 container container-felepites">
+                        <img src="../img/planets/Jupiter/europa.png" alt="Europa">                                                         
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-gyuruk">
+                    <h2 class="text-center mx-4 mt-4">Gyűrűk</h2>
+                    <p class="mx-4 text-center">
+                        A Jupiternek alig látható porból és apró törmelékekből álló gyűrűje van.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="osszefoglalo-video">
+                    <h2 class="text-center mx-4 mt-4">Összefoglaló videó</h2>
+                    <p class="mx-4 text-center">
+                        Elérkeztünk fejezetünk végére, melyben a Jupiterről tudhattunk meg többet. Most pedig kérlek benneteket tekintsétek meg az Űrkutatás Magyarul youtube csatorna videóját, melyben egy velős minden igényt kielégítő bemutatót láthattok a Naprendszer legnagyobb bolygójáról.
+                    </p>
+                    <div class="mx-auto osszefoglalo-container">
+                        <iframe src="https://www.youtube.com/embed/watch?v=JUnjiIjFL7Y&list=PLP33AR3c0LjvyPiSmWXuIAMvI2Y5mwsIc&index=7" frameborder="0" id="osszefoglaloVideo"></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

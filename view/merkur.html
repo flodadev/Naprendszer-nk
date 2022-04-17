@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Merkúr</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/mercury.png">
+</head>
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="../view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="../view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="../view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="../view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="../view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="../view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="../view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="../view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <div class="mx-auto container-main">
+            <main role="main" class="main">
+                <section class="section-bevezetes">
+                    <h1 class="cim1 text-center mx-4" id="sziasztok-urutazok">Sziasztok Űrutazók!</h1>
+                    <p class="text-center">                
+                        Köszöntelek benneteket felfedezőtúránk második állomásánál, a Naphoz legközelebbi bolygónál, a Merkúrnál! Ha kívülről rátekintünk, leginkább a Föld holdjához lehetne hasonlítani, viszont nagyon sok dologban különbözik égi kísérőnktől. Emelett rengeteg érdekesség derült ki róla a több évtizedes kutatásoknak köszönhetően. Hogy mik ezek? Tartsatok velem, fedezzük fel együtt a Merkúrt! Öveket becsatolni! Landolunk.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-altalanos">
+                    <div class="grid-container">
+                        <div class="w-50 mx-auto row">
+                            <div class="col-xl-6 colList">
+                                <ul class="altalanos-info-list">
+                                    <li class="li-tavolsag">Naptól való távolság: 57,9 millió km</li>
+                                    <li class="li-homerseklet">Felszíni hőmérséklet: -180 °C-tól, 430 °C-ig</li>
+                                    <li class="li-atmero">Átmérő: 4875 km</li>
+                                    <li class="li-tomeg">Tömeg (Föld = 1): 0,055</li>
+                                    <li class="li-hold">Holdak száma: 0</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 colImage">
+                                <img src="../img/planets/mercury.png" id="imgMerkur" alt="Merkúr">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mx-4">
+                        Naprendszerünk legkisebb és Naphoz legközelebbi bolygója a Merkúr. Mérete csupán kicsivel nagyobb, mint a Föld holdja. A Merkúr felszíni hőmérséklete egyszerre rnedkívül meleg és hideg. Mivel a bolygó nagyon közel van a Naphoz, a nappali hőmérséklet elérheti a 430 °C-ot. De mivel a Merkúrnak nincs légköre ami ezt a hőt megtartaná, éjszaka a hőmérséklet -180 °C alá is süllyedhet. Ahogy említettem, ez a Naphoz legközelebbi égitest, ám nem ez a legforrób felszínű a Naprendszerben. Ez a cím a Merkúr közvetlen szomszédját, a <a href="../view/venusz.html" id="linkBolygo">Vénuszt</a> illeti, melyről a következő fejezetben tudhattok meg többet. Ezzel ellentétben a Merkúr leggyorsabb bolygó. 88 földi naponként tesz egy teljes kört a Nap körül.
+                    </p>
+                    <p class="mx-4">
+                        A Merkúr sugara 2440 km, mely valamivel több mint egyharmada a Föld szélességének. Naptól való átlagos távolsága 58 millió km, amely 0,4 Csillagászati egységnek felel meg.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-palya">
+                    <h2 class="text-center mx-4 mt-4">Pálya</h2>
+                    <p class="mx-4">
+                        Ha a Plútót nem számoljuk, a Naprendszer bolygói közül a Merkúr rendelkezik a legeliptikusabb pályával. Periheliumban <small>(Amikor a legközelebb van a Naphoz)</small> csak 46 millió kilóméterre van a Naptól, de apheliumban <small>(Amikor a legtávolabb van a Naphtól)</small> 69,8 millió kilóméterre van tőle. A Merkúr egyenlítőjének síkja, egybeesik pályájának síkjával, ami azt eredményezi, hogy a bolygón nem léteznek évszakok. A Nap sugarai, szinte mindig merőleges szögben érik el a bolygó felszínét.
+                    </p>
+                    <p class="mx-4"> 
+                        Mint azt már említettem, a Merkúr kerüli meg leggyorsabban a Napot. Ez 88 földi napba telik neki. Ám a saját tengelye körül nagyon lassan forog. Ahhoz hogy körbeforduljon saját tengelye körül, 59 földi nap szükséges. Ez és pályájának ellipszis alakja miatt egy érdekes jelenség figyelhető meg a bolygó felszínén. Amikor a Merkúr a legközelebb van a Naphoz, nem mindenforgást kísér napfelkelte, illetve napnyugta, mint azt más bolygókon és a Földön megszokhattuk. Úgy tűnik, mintha a Nap egy rövid időre felkelne, majd lenyugodna a bolygó egyes részeiről. Ez fordítva is igaz a felszín ellentétes részein. Ez is hozzájárul ahhoz, hogy egy teljes merkúri nap 176 földi napnak felel meg. Ez kicsivel több mint 2 merkúri év.
+                    </p>
+
+                    <div class="mx-auto container cards">                        
+                        <div class="card">
+                            <video controls autoplay muted loop>
+                                <source src="../img/planets/Mercury/orbit.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="text-center">A Merkúr pályája</figcaption>
+                        </div>                
+                        <div class="card">
+                            <video controls autoplay muted loop>
+                                <source src="../img/planets/Mercury/viewofsun.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="text-center">A Nap, a Merkúr felszínéről nézve</figcaption>
+                        </div>                        
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-szerkezet">
+                    <h2 class="text-center mx-4 mt-4">Szerkezet</h2>
+                    <p class="mx-4">
+                        A Merkúr, a Naprendszer négy Föld-típusú bolygójának egyike, és a Földhöz hasonlóan kőzetrétegekből épül fel. A bolgyó, nagyjából 70% fémet és 30% szilikátot <small>(ásványok és kőzetek)</small> tartalmaz. Magja 5,427 g/cm<sup>3</sup>, melynek köszönhetően a Merkúr a Naprendszer második legsűrűbb bolygója. Ezek alapján következtethetünk a bolygó belső összetételére. A tudósok ezen információk alapján jutottak arra, hogy a Merkúrnak viszonylag nagy, vasban gazdag maggal kell rendelkeznie, mely különböző számítások szerint a bolygó tömegének akár 42%-át is kiteheti. Ez a mag valószínűleg olvadt állapotban van.
+                    </p>
+                    <p class="mx-4">
+                        A belső magot, egy körülbelül 600 km vastag szilikátköpeny veszi körül. Ez a köpeny a maghoz viszonyítva igen csekély, ám csillagászok feltételezései szerint, a Merkúr, még fiatal bolygóként egy több szák kilóméteres testtel ütközhetett, melynek következtében külső kőzetköpenyének nagy részét elvesztette. Ezt a köpenyt fedi a bolygó legkülső, kéregnek nevezett rétege, mely 100-200 km vastag.
+                    </p>
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Mercury/structuremercury.jpg" alt="A Merkúr szerkezete">
+                        <figcaption class="text-center">A Merkúr szerkezete</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+                
+                <section class="section-felszin">
+                    <h2 class="text-center mx-4 mt-4">Felszín</h2>
+                    <p class="mx-4">
+                        Ha valamihez hasonlítani kellene a Merkúr felszínét, leginkább a Föld holdjának felszínéhez lehetne. Mindkét égitest felszínét meteoridákkal, üstökösökkel való ütközésekből származó becsapódási kráterek tartkítják. Ám ez a felfedezés, csak a Mariner-10 űrszonda által készített képekből volt egy egyértelműen kijelenthető, köszönhetően a Merkúr Naphoz való közelségének. Pontosan emiatt nem vizsgálta a Hubble űrtávcső sem. Ám a kettő, Merkúr vizsgálatára indított űrszonda a Mariner-10 és a Messenger temérdek információval szolgált Naprendzerünk legelső bolygóját illetően. Ezen két űreszköz megfigyelései alapján bizonyosodtak meg a tudósok arról, hogy a Merkúr és a Hold között az egyik fő különbség az égitest fényvisszaverő képessége, vagyis albedója. Ám ha mégis egymás mellé tennénk egy-egy fényképet a Holdról, illetve a Merkúrról, még mindig nehéz lenne szembetűnő különbségeket találni.
+                    </p>
+                    <p class="mx-4">
+                        Felszíni hőmérsékletéről már esett szó, mely mint már tudjuk -180 °C és 430 °C között mozog. Ám az általában tapasztalható igen magas hőmérséklet ellenére, megfigyeléseinkből arra lehet következtetni, hogy nagy valószínűséggel jég található a Merkúr felszínén. A sarkokon lévő krátereket, ugyanis soha nem éri napfény, ezért az itt lévő terület hőmérséklete jóval a bolygó egészén mért átlaghőmérséklet alatt van.
+                    </p>
+                    <p class="mx-4">
+                        A remények szerint a jeges területek csupán pár méter mélyen vannak, s az itteni rétegek 10<sup>14</sup>-10<sup>15</sup> kg jeget rejtenek. Összhasonlításképpen, a Földön, az Antarktika belsejében 4*10<sup>18</sup> kg víz található. Megfigyelések alapján a merkúri jég nagyobbrészt üstökösökből származik, ám kisebb része (kb 10%) a napszél hatására alakul ki. Ez utóbbi mechanizmusa az, hogy a Napból származó protonok becsapódnak a felszínbe, majd ott kémiai reakcióba lépnek a talajban lévő hidroxil-csoportokkal, amiből víz keletkezik. Ezen víz egy része azonnal elpárolog, másik része pedig az árnyékos kráterekbe hullik, ott felhalmozódik, és az alacsony hőmérséklet miatt meg tud maradni.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/mercury.glb" camera-controls alt="A Merkúr 3D-s modellje"></model-viewer>
+                    <figcaption class="text-center">A Merkúr 3D-s modellje</figcaption>    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-legkor">
+                    <h2 class="text-center mx-4 mt-4">Légkör</h2>
+                    <p class="mx-4">
+                        A Merkúrnak átmeneti és igen ritka légköre van, mivel a bolygó túl kicsi ahhoz, hogy visszatartsa a gázokat. Átmeneti légkörében oxigént (52%), héliumot (8%), hidrogént, nátiumot (39%), káliumot és kalciumot mutattak ki. Ezek az elemek a bolygó felszínéről párolognak. A napsugárzás nyomása atomokat lök el a Merkúrról, melyek hatamlas csóvát eredményeznek. A nátrium atomok a napszéllel kölcsönhatásba lépve a mágneses mezőben sarki fényeket okoznak.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-magnetoszfera">
+                    <h2 class="text-center mx-4 mt-4">Magnetoszféra</h2>
+                    <p class="mx-4">
+                        A Merkúr-kutatás egyik legérdekesebb és legmeglepőbb eredménye volt az égitest mágneses terének felfedezése. 1974.március 29-én, a Mariner-10 amerikai űrszonda a bolygó árnyékában lévő, azaz éjszakai félgömbje fölött haladt el. Műszerei ekkor olyan mágneses lökéshullámot észleltek, mint amilyen a Föld magnetoszférájának Nap felőli oldalán alakul ki. A szintén amerikai Messenger űrszonda által mért adatokból a mágneses tér vizsgálata alapján a korábbinál pontosabban sikerült meghatározni annak jellemzőit.
+                    </p>
+                    <p class="mx-4">
+                        A mágnese tér centruma nem pont a Merkúr geometriai középpontjával esik egybe, hanem attól 360 kilóméterre északra helyezkedik el, aminek következtében a mágneses egyenlítő nem eski egybe a földrajzival. Ennek következtében az északi sarkvidéken a mágneses mező felszíni térereje három-négyszerese a délinek.
+                    </p>
+                    <p class="mx-4">
+                        A mágneses tér aszimmetrikus térbeli helyzete és az erővonalak nagyobb északi sűrűsége miatt a világűrből érkező töltött részecskékből sokkal több bombázza a déli sarkvidéket, ahol ettől erősebb a felszínátalakulás. A mérések alapján kiderült, hogy a mágneses tengely 3 fokos szöget zár be a bolygó forgástengelyével.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-elet">
+                    <h2 class="text-center mx-4 mt-4">Élet a bolygón</h2>
+                    <p class="mx-4 text-center">
+                        A Merkúr környezete nem kedvez az általunk ismert életnek. A bolygóra jellemző hőmérséklet és napsugárzás valószínűleg túl szélsőséges ahhoz, hogy az élőlények alkalmazkodni tudjanak hozzá. Ezért sajnos az élet lehetősége teljesen kizárható.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-holdak">
+                    <h2 class="text-center mx-4 mt-4">Holdak</h2>
+                    <p class="mx-4 text-center">
+                        A Merkúr nem rendelkezik holdakkal.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-gyuruk">
+                    <h2 class="text-center mx-4 mt-4">Gyűrűk</h2>
+                    <p class="mx-4 text-center">
+                        A Merkúr nem rendelkezik gyűrűkkel.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="osszefoglalo-video">
+                    <h2 class="text-center mx-4 mt-4">Összefoglaló videó</h2>
+                    <p class="mx-4 text-center">
+                        Elérkeztünk fejezetünk végére, melyben a Merkúrról tudhattunk meg többet. Most pedig kérlek benneteket tekintsétek meg az Űrkutatás Magyarul youtube csatorna videóját, melyben egy velős minden igényt kielégítő bemutatót láthattok a Naphoz legközelebbi kőzetbolygóról.
+                    </p>
+                    <div class="mx-auto osszefoglalo-container">
+                        <iframe src="https://www.youtube.com/embed/watch?v=JUnjiIjFL7Y&list=PLP33AR3c0LjvyPiSmWXuIAMvI2Y5mwsIc&index=2" frameborder="0" id="osszefoglaloVideo"></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

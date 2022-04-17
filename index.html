@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Naprendszerünk</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/rocket.png">
+</head>
+
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <main role="main" class="main">
+            <section class="section-mainWelcome">
+                <h1 class="welcome focus-in-expand">Sziasztok Űrutazók!</h1>
+                <p class="textIntroduce">
+                    Köszöntelek benneteket a weboldalamon! Amint a címből kiderült, a Naprendszert fogjuk közelebbről
+                    megismerni. A különböző bolygókat, égitesteket változatos képekkel, 3D-s modellekkel mutatom be,
+                    mindenki számára érthető megközelítésben. Ebben segítségemre lesz az <a class="linkUrMagyar"
+                        href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul">Űrkutatás Magyarul</a> YouTube
+                    csatorna és készítője, aki színes, érdekes és összeszedett videóival minden lényeges információt
+                    feldolgoz, amit Naprendszerünk tagjairól tudni érdemes.
+                </p>
+            </section>
+
+            <div class="divider div-transparent div-dot"></div>
+
+            <section class="section-planet">
+                <h1 class="text-center cim">Bolygók és Csillagok</h1>
+                <div class="mx-auto w-75 slider-wrap mt-4 mb-4">
+                    <div class="slide" id="slide-1">
+                        <a href="view/nap.html">
+                            <img src="img/planets/sun.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Nap</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-2">
+                        <a href="view/merkur.html">
+                            <img src="img/planets/mercury.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Merkúr</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <a href="view/venusz.html">
+                            <img src="img/planets/venus.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Vénusz</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-4">
+                        <a href="view/fold.html">
+                            <img src="img/planets/earth.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Föld</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-5">
+                        <a href="view/mars.html">
+                            <img src="img/planets/mars.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Mars</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-6">
+                        <a href="view/jupiter.html">
+                            <img src="img/planets/jupiter.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Jupiter</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-7">
+                        <a href="view/szaturnusz.html">
+                            <img src="img/planets/saturn.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Szaturnusz</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-8">
+                        <a href="view/uranusz.html">
+                            <img src="img/planets/uranus.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Uránusz</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-9">
+                        <a href="view/neptunusz.html">
+                            <img src="img/planets/neptune.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Neptunusz</figcaption>
+                        </a>
+                    </div>
+                    <div class="slide" id="slide-10">
+                        <a href="view/pluto.html">
+                            <img src="img/planets/pluto.png" width="300px" height="300px" alt="">
+                            <figcaption class="text-center sliderCaption">Plútó</figcaption>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider div-transparent div-dot"></div>
+
+            <section class="section-solarSystem">
+                <!--Forrás: http://mek.oszk.hu/12000/12026/12026.pdf-->
+                <h1 class="text-center mt-4 mb-4">Naprendszerünkről Röviden</h1>
+                <p class="mx-4 text-center">
+                    Bolygórendszerünk a Tejútrendszer egyik külső spirálkarjában található.
+                    <i>A Naprendszer az a körülbelül 1 fényév átmérőjű tértartomány, ahol a Nap tömegvonzása
+                    erősebb a környező csillagokénál.</i> A gyakorlatban, amit jól ismerünk belőle, az ennél sokkal
+                    kisebb térrész. Hagyományosan a Nap, a 8 nagybolygó (Merkúr, Vénusz, Föld, Mars, Jupiter,
+                    Szaturnusz, Uránusz, Neptunusz), a Plútó-szerű objektumok, a
+                    kisbolygók övezete és az a sok millió üstökösmag, mely az Oort-felhőt alkotja, tartozik a szűkebb Naprendszerbe.
+                    A bolygók és a Plútó-szerű objektumok csak a legbelső 50 CSE-et foglalják el. Az üstökösök akár 10-100 ezer CSE-ig, vagyis 1 fényévig terjedhetnek.
+                    <small>(Egy Csillagászati Egység (CSE) mintegy 149,6 millió km.)</small>
+                </p>
+                <p class="mx-4 text-center">
+                    A Naprendszerben nagyok a sűrűségkülönbségek. <i>A belső övezetében a nagy sűrűségű kőzetbolygók találhatók.</i> Ezek között is vannak eltérések. A Föld, Vénusz és a Merkúr nagyobb sűrűségű, a Mars kisebb sűrűségű. <i>A külső gázóriások jelentősen kisebb sűrűségűek.</i> Ennek oka, hogy főként gázból állnak, méretükhöz képest viszonylag kicsiny maggal rendelkeznek. <i>A Szaturnusz átlagsűrűsége még a vízét sem éri el.</i>
+                </p>
+                <p class="mx-4 text-center">
+                    <i>A Naprendszer</i> keletkezését tekintve a ma legelfogadottabbnak tekintett keletkezési modell szerint Napunk <i>születési helye egy molekulafelhő volt, egy gázzal és kozmikus porral teli, instabil térség, amelyben valamilyen okból</i> a - legvalószínűbb forgatókönyv szerint egy közeli szupernóva robbanásának hatására - <i>felborult az egyensúly, és egy Naprendszer méretű anyagcsomó a saját tömegétől összeomlott, és az anyag elkezdett összehúzódni egész addig, míg létre nem jött belőle a proto-Nap.</i> A csillagkezdemény anyaga még tovább sűrűsödött, és néhány millió év alatt beindult a
+                    belsejében a magfúzió, megszületett a Nap. A beinduló magfúzió hatására a napszél is elkezdte áramlását és kifújta a maradék gázt a Nap környezetéből.
+                </p>
+                <p class="mx-4 text-center">
+                    A bolygóképződés elmélete manapság még nem teljesen kidolgozott. Számos elképzelés van. A legvalószínűbb - a tudományos közösség által napjainkban leginkább elfogadott - keletkezéstörténeti forgatókönyv szerint <i>a bolygók kialakulása közvetlenül a Nap születése után, a csillag körül kialakult protoplanetáris korongból indult el.</i> A keringő anyag belső súrlódása miatt már a protocsillag állapot végén megkezdődött egy anyagbefogási korong kialakulása a gyorsan forgó csillag egyenlítői síkjában, a csillagkeletkezés során visszamaradt gáz- és poranyagból. <i>Először a gázbolygók alakultak ki a Nap sugárzása által a rendszer külső részébe fújt gázból, nagyjából 2-3 millió év alatt.</i>
+                </p>
+                <p class="mx-4 text-center">
+                    <i>A Naprendszert tekintve a helyi anyagsűrűsödésekből bolygócsírák képződtek, s ezek növekedtek, álltak össze bolygókká.</i> Belül, ahol a hőmérséklet magasabb volt, az illó anyagok eltűntek, s a Naprendszer belső vidékein a gáz kifelé távozása miatt csak por maradt. Csak a kőzetek maradtak vissza. A külső régiókban, ahol alacsony volt a hőmérséklet, felgyülemlettek a gázok, így alakultak ki a gázbolygók és jégholdjaik. <i>A belső Naprendszerben folyamatosak voltak a bolygócsírák ütközései, míg végül kialakultak a ma ismert bolygók.</i> Ez a folyamat jóval hosszabb volt. E bolygócsírák is számtalan ütközést szenvedtek el.
+                </p>
+                <p class="mx-4 text-center">
+                    <i>A külső Naprendszerben eközben módosultak a gázbolygók pályái.</i> A Jupiter 2:1-rezonanciába került a Szaturnusszal. Ennek következménye lett, hogy <i>a Jupiter közelebb, a Szaturnusz távolabb került a Naphoz, míg az eredetileg eggyel beljebb keringő Neptunusz helyet cserélt az Uránusszal, így a sorrend Uránusz - Neptunusz lett a Naptól távolodva.</i> E pályaváltozások hatására a Kuiper és az aszteroida övből számtalan törmelék indult a belső Naprendszerbe, és megkezdődött a kései nagy bombázás, melynek nyomát viseli a Hold és a Merkúr is. <i>Ezt követően a Naprendszer stabilizálódott és elnyerte mai formáját.</i> 
+                </p>
+            </section>
+        </main>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>

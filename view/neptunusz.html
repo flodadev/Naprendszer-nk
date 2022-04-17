@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Neptunusz</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/neptun.png">
+</head>
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="../view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="../view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="../view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="../view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="../view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="../view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="../view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="../view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <div class="mx-auto container-main">
+            <main role="main" class="main">
+                <section class="section-bevezetes">
+                    <h1 class="cim1 text-center mx-4" id="sziasztok-urutazok">Sziasztok Űrutazók!</h1>
+                    <p class="text-center">                
+                        Köszöntelek benneteket űrutazásun kilencedik állomásánál, a Naprendszer másik nagy jégóriásánál, a Neptunusznál. A Neptunusz névről ugye mindenkinek a görög mitológiában szereplő tenger isten ugrik be ugye? Nos ez nem véletlen. Nevét élénk kék színé miatt kapta, hisz a tenger istenével azonosították. Viszont nem szeretném tovább szaporítani a szót! Tartsatok velem, fedezzük fel együtt a Neptunuszt!
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-altalanos">
+                    <div class="grid-container">
+                        <div class="w-50 mx-auto row">
+                            <div class="col-xl-6 colList">
+                                <ul class="altalanos-info-list">
+                                    <li class="li-tavolsag">Naptól való távolság: 4,5 milliárd km</li>
+                                    <li class="li-homerseklet">Hőmérséklet a felhők tetején: -200 °C</li>
+                                    <li class="li-atmero">Átmérő: 49 532 km</li>
+                                    <li class="li-tomeg">Tömeg (Föld = 1): 17,1</li>
+                                    <li class="li-hold">Holdak száma: 13</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 colImage">
+                                <img src="../img/planets/neptune.png" id="imgNeptunusz" alt="Neptunusz">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mx-4">
+                        Sötét, hideg és szuperszonikus szelek által felkorbácsolt vidék a Neptunusz. A Naptól számított nyolcadik bolygó, Naprendszerünk harmadik legnagyobbja és az Uránuszhoz hasonlóan jégóriás. A Neptunusz több mint 30-szor nagyobb távolságra van a Naptól, min a Föld, és ez az egyetlen bolygó, mely szabad szemmel nem látható. A Neptunusz olyan messze van a Naptól, hogy a nagy kék bolygón a déli órák a mi szemünkben halvány szürkületnek tűnnénnek. A meleg fény, melyet itt, a Földön látunk, nagyjából 900-szor fényesebb mint a Neptunuszon.
+                    </p>
+                    <p class="mx-4">
+                        49 532 kilóméteres átmérőjével nagyjából négyszer szélesebb mint a Föld. Átlagos távolsága központi csillagunktól 4,5 milliárd km, mely 30 Csillagászati Egységnek felel meg. Ebből a távolságból a napból sugárzó fénynek 4 órába telik elérnie a Neptunuszt.
+                    </p>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-palya">
+                    <h2 class="text-center mx-4 mt-4">Pálya</h2>
+                    <p class="mx-4">
+                        A Neptunusz 164,8 földi év alatt kerüli meg a Napot, ami azt jelenti, hogy felfedezése óta ez még csak egyszer történt meg. A bolygó forgástengelye 61,7 fokos szögben hajlik a pályasíkhoz, északi és déli pólusa felváltva dől a Naphoz. A Nap 900-szor halványabbnak látszik, mint a Földről, mégis évszakos változásokat idéz elő. Földi teleszkópokkal és a Hubble űrtávcsővel végzett megfigyelések kimutatták, hogy a déli félteke fényessége 1980 óta növekedett. Azonban további megfigyelések szükségesek, mert az évszakok hosszúak, a változások pedig lassúak. A déli féltekén jelenleg nyárközép van.
+                    </p>                             
+
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Neptune/orbitneptun.png" alt="A Neptunusz pályája">
+                        <figcaption class="text-center">A Neptunusz pályája</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-szerkezet">
+                    <h2 class="text-center mx-4 mt-4">Szerkezet</h2>
+                    <p class="mx-4">
+                        A Neptunusz mérete és szerkezete nagyon hasonló az Uránuszhoz, egyiknek sincs szilárd felszíne. Méretéhez képes túl nagy tömegű ahhoz, hogy főleg hidrogénből álljon. A bolygó tömegének csak mintegy 15%-a lehet hidrogén. Fő alkotóeleme a víz, az ammónia és a metán, mely jég formájában lehet jelen a mélyebb rétegekben. A bolygó mágneses tere is e rétegben keletkezik. E jeges réteg felett van a bolygó légköre, ez egy sekély, hidrogénben gazdag réteg, mely héliumot és metánt is tartalmaz. A bolygó középpontjában egy kőzetekből és jégből álló mag található.
+                    </p>
+                    
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Neptune/structureneptune.jpg" alt="A Neptunusz szerkezete">
+                        <figcaption class="text-center">A Neptunusz szerkezete</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+                
+                <section class="section-felszin">
+                    <h2 class="text-center mx-4 mt-4">Felszín</h2>
+                    <p class="mx-4 text-center">
+                        A Neptunusznak nincs szilárd felszíne. Légköre (amely főként hidrogénből, héliumból és metánból áll) nagy mélységekbe nyúlik, és fokozatosan vízzel és más olvadt jéggel olvad össze egy nehezebb, szilárd mag felett, amelynek tömege körülbelül a Földével azonos.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/neptune.glb" camera-controls alt="A Neptunusz 3D-s modellje"></model-viewer>
+                    <figcaption class="mb-4 text-center">A Neptunusz 3D-s modellje</figcaption>    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-legkor">
+                    <h2 class="text-center mx-4 mt-4">Légkör</h2>
+                    <p class="mx-4">
+                        A Neptunusz esetében zavarba ejtő, hogy a Naptól ilyen távol mégis dinamikus légkör található. Hatalmas viharok jelennek meg, és igen nagy sebességű szelek fordulnak elő. A Naptól kapott hőmennyiség nem elegendő ehhez. A légkör az alsóbb rétegektől kaphat hőt, azaz egy belső hőforrás okozhat nagyléptékű légköri változásokat.
+                    </p>
+                    <p class="mx-4">
+                        A bolygót körülevő fehér sávok olyan felhőtakarók, melyek akkor keletkeznek, amikor a felmelegített gáz felszáll, majd felhőket alkotva lecsapódik. A szelek az egyenlítői régióban a legviharosabbak. Ott nyugati irányba fújnak, és sebességük eléri a 2160 km/h-t. Ezeket nagyméretű viharszerű alakzatok kísérik. Ilyen volt a Nagy Sötét Folt, melyet a Voyager-2 látott 1989-ben. A Neptunusz légköre főleg hidrogénből (79%), héliumból (18%) és metánból, valamint nyomokban más gázokból (3%) áll. A bolygó sötétkék színét a metán adja. 
+                    </p>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-magnetoszfera">
+                    <h2 class="text-center mx-4 mt-4">Magnetoszféra</h2>
+                    <p class="mx-4">
+                        A Neptunusz mágneses mezejének főtengelye a bolygó forgástengelyéhez képest mintegy 47 fokkal el van billenve. Az Uránuszhoz hasonlóan, amelynek mágneses tengelye mintegy 60 fokkal dől el a forgástengelytől, a Neptunusz magnetoszférája minden egyes forgás során vad változásokon megy keresztül e helytelen irányú elfordulás miatt. A Neptunusz mágneses mezeje körülbelül 27-szer erősebb, mint a Földé.
+                    </p>                    
+
+                    <div class="mx-auto mb-4 container container-felepites">
+                        <img src="../img/planets/Neptune/magnetosphereneptune.png" alt="A Neptunusz mágneses tere">
+                        <figcaption class="text-center">A Neptunusz mágneses tere</figcaption>                                            
+                    </div>
+                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-elet">
+                    <h2 class="text-center mx-4 mt-4">Élet a bolygón</h2>
+                    <p class="mx-4 text-center">
+                        A Neptunusz szélsőséges környezete nem kedvez az általunk ismert élet kialakulásának. A bolygót jellemző hőmérséklet, nyomás és anyagok valószínűleg túl szélsőségesek és illékonyak ahhoz, hogy az organizmusok alkalmazkodni tudjanak hozzájuk.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-holdak">
+                    <h2 class="text-center mx-4 mt-4">Holdak</h2>                                        
+                    <p class="mx-4">
+                        A Neptunusznak 14 ismert holdja van. A Neptunusz legnagyobb holdját, a Tritont 1846. október 10-én fedezte fel William Lassell, mindössze 17 nappal azután, hogy Johann Gottfried Galle felfedezte a bolygót. Mivel a Neptunusz a tenger római istenéről kapta a nevét, holdjait a görög mitológiában különböző kisebb tengeri istenekről és nimfákról nevezték el.
+                    </p>
+                    
+                    <h3 class="text-center mx-4 mt-4">Triton</h3>
+                    <p class="mx-4">
+                        Távolsága a Neptunusztól 354.760 km, átmérője 2707 km. A Neptunusz holdjai közül a Triton volt az első, melyet felfedeztek. William Lassale találta meg a bolygó legnagyobb holdját. A Voyager-2 Triton melletti elrepülésének köszönhető mindaz, amit tudunk. Körpályán kering, és keringése kötött. Mozgása retrográd, vagyis ellentétes irányban kering. Ez arra enged következtetni, hogy valahol máshol keletkezett, s a Neptunusz esetleg befogta. A hold két rész kőzet és egy rész jég keverékéből áll, belsejében egy kőzetből álló mag lehet, s esetleg egy folyékony köpeny. Felszíne geológiai szempontból fiatal, egy sor különféle alakzat található rajta. 
+                    </p>  
+
+                    <div class="mx-auto mb-4 container container-felepites">
+                        <img src="../img/planets/Neptune/triton.png" alt="Triton">                                                         
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-gyuruk">
+                    <h2 class="text-center mx-4 mt-4">Gyűrűk</h2>
+                    <p class="mx-4">
+                        Az első utalás arra, hogy a Neptunusznak gyűrűi lehetnek, az 1980-as évekből származik, amikor csillagfedések alkalmával azok a bolygókorong közelében felvillantak és elsötétültek. A gyűrűrendszert végül a Voyager-2 fedezte fel. A Neptunusznak gyűrűrendszere van, de külső gyűrűje olyan ritka, hogy nemigen halványítja el a csillagfényt, de van három teljes gyűrűje is. A gyűrűk ismeretlen összetételű, apró darabokból állnak, anyaguk feltehetőleg a közeli holdakról származik.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="osszefoglalo-video">
+                    <h2 class="text-center mx-4 mt-4">Összefoglaló videó</h2>
+                    <p class="mx-4 text-center">
+                        Elérkeztünk fejezetünk végére, melyben a Neptunuszról tudhattunk meg többet. Most pedig kérlek benneteket tekintsétek meg az Űrkutatás Magyarul youtube csatorna videóját, melyben egy velős minden igényt kielégítő bemutatót láthattok a Naprendszer sötét és szélsőséges kék óriásáról.
+                    </p>
+                    <div class="mx-auto osszefoglalo-container">
+                        <iframe src="https://www.youtube.com/embed/watch?v=JUnjiIjFL7Y&list=PLP33AR3c0LjvyPiSmWXuIAMvI2Y5mwsIc&index=11" frameborder="0" id="osszefoglaloVideo"></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

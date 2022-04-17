@@ -1,0 +1,574 @@
+/*A Roboto Condensed betűtípus importálása a Google Fonts oldalról*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+/*A Roboto Condensed betűtípus importálása a Google Fonts oldalról*/
+
+/*A body tag hátterének és minimális szélességének beállítása*/
+body{
+  background-image: url("../img/background/bgmain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 360px;
+    font-size: 1.3rem;
+    color: white;
+}
+/*A body tag hátterének és minimális szélességének beállítása*/
+
+/*Betűtípus beállítása minden elemre*/
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/*Betűtípus beállítása minden elemre*/
+
+/*Saját bootstrap html formázási osz készítése */
+.ml-auto{
+  margin-left: auto;
+}
+/*Saját bootstrap html formázási osz készítése */
+
+.container-main{
+  background-color: rgba(10, 10, 10, 0.5);
+  max-width: 75%;
+  /*padding: 0 15px 0 15px;*/
+}
+
+.cim1{
+  color: white;
+  padding-top: 10px;
+}
+
+/*------------------------------NAVBAR------------------------------*/
+
+/*A navigációs sáv és a footer hátterének beállítása*/
+.navbar-custom,
+.footer-custom{
+    background-color: #191919;
+}
+/*A navigációs sáv és a footer hátterének beállítása*/
+
+/*A navigációs sáv logójának formázása*/
+.navbar-brand{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media(min-width: 992px){
+  .navbar-brand{
+    font-size: 2rem;
+}
+}
+/*A navigációs sáv logójának formázása*/
+
+/*A navigációs sáv hamburger ikonjának formázása*/
+.navbar-toggler-icon{
+    background-image: url("../img/navbar/hamburger.png") !important;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-toggler{
+  border-color: transparent !important;
+  padding: 5px !important;
+  width: 60px;
+  height: 60px;
+}
+/*A navigációs sáv hamburger ikonjának formázása*/
+
+
+@media(min-width: 992px){
+    .navbar-expand-lg .navbar-collapse{
+        width: 100%;
+    }
+}
+
+/*A navigációs sáv legördülő menüjének elemei középre igazítása*/
+.dropdown-item{
+    text-align: center;
+}
+/*A navigációs sáv legördülő menüjének elemei középre igazítása*/
+
+/*------------------------------NAVBAR------------------------------*/
+
+/*---------------------DIVIDER---------------------*/
+.divider
+{
+	position: relative;
+	margin-top: 15px;
+  margin-bottom: 15px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: #219ebc;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+/*---------------------DIVIDER---------------------*/
+
+/*------------------------------MAIN------------------------------*/
+
+/*---------INDEX.HTML----------*/
+/*Az üdvözlő szöveg formázása*/
+.welcome{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 4rem;
+}
+/*Az üdvözlő szöveg formázása*/
+
+/*A fő tartalom betűszínének beállítása*/
+main{
+    color: #fff;
+}
+/*A fő tartalom betűszínének beállítása*/
+
+/*A bevezető szöveg formázása*/
+.textIntroduce{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 15px 0 15px;
+}
+/*A bevezető szöveg formázása*/
+
+/*Az ŰrkutatásMagyarul csatornára vezető link formázása*/
+.linkUrMagyar{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.linkUrMagyar:hover{
+    color: #808080;
+}
+/*Az ŰrkutatásMagyarul csatornára vezető link formázása*/
+
+/*A különböző container-ek, "csomagoló"-k marginjainak és paddingjainak formázása*/
+.wrapper{
+  margin-top: 40px;
+  max-width: 1400px;
+  margin-bottom: 40px;
+}
+
+.row{
+  padding: 15px 0;
+}
+/*A különböző container-ek, "csomagoló"-k marginjainak és paddingjainak formázása*/
+
+/*A bolgyókhoz tartozó képek méretének megadása*/
+#imgBolygo{
+  width: 100%;
+  height: auto;
+}
+/*A bolgyókhoz tartozó képek méretének megadása*/
+
+/*A bolgyókhoz vezető linkek formázása*/
+.linkPlanets{
+  color: #fff;
+  text-decoration: none;
+}
+.linkPlanets:hover{
+  color: #808080;
+}
+
+.cim2{
+  padding-top: 15px;
+}
+/*A bolgyókhoz vezető linkek formázása*/
+
+.section-solarSystem{
+  margin: 0 15px 0 15px;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+i{
+  color: #219ebc;
+}
+/*---------INDEX.HTML----------*/
+
+.triangle-divider{
+  position: relative;
+  background-color: #219ebc;
+  height: 1vh;
+}
+.triangle-divider::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  border-color: #219ebc transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+.altalanos-info-wrapper{
+  display: flex;
+  flex-flow: row;
+}
+
+.list-container{
+  display: flex;
+  align-items: center;
+}
+
+.li-tavolsag{
+  list-style: url("../img/icons/distance.png");
+}
+.li-homerseklet{
+  list-style: url("../img/icons/temperature.png");
+}
+.li-atmero{
+  list-style: url("../img/icons/diameter.png");
+}
+.li-tomeg{
+  list-style: url("../img/icons/weight.png");
+}
+.li-hold{
+  list-style: url("../img/icons/moon.png");
+}
+
+.colImage{
+  display: flex;
+  justify-content: center;
+}
+.colList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linkBolygo{
+  text-decoration: none;
+  color: #219ebc;
+}
+
+#imgNap,
+#imgMerkur,
+#imgVenusz,
+#imgFold,
+#imgMars
+#imgJupiter
+#imgSzaturnusz
+#imgUranusz
+#imgNeptunusz
+#imgPluto{
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+}
+
+.container-palya,
+#imgPalya{
+  min-width: 200px;
+  max-width: 640px;
+  height: auto;
+}
+
+#imgPalyaInner{
+  width: 100%;
+  height: 100%;
+}
+
+.offcanvas-wrapper{
+  display: flex;
+  justify-content: center;
+}
+#offcanvasBottom{
+  height: 65vh;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+#offcanvasLink{
+  color: #219ebc;
+}
+#offcanvasImage{
+  width: 500px;
+  height: 100%;
+}
+#offcanvasImage_mr2{
+  width: 500px;
+  height: 100%;
+  margin-right: 20px;
+}
+#alfaAB{
+  width: 100%;
+  height: auto;
+}
+#sizecontainerNap{
+  display: flex;
+  justify-content: center;
+}
+#napCompare{
+  width: 70%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+#eletciklusNap,
+#felepitesNap,
+#napkitoresImg,
+#napfoltImg,
+#koronalyukImg{
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+.nap-retegek-list-container,
+.oceanok-list-container,
+.kontinensek-list-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  background-color: rgba(40, 40, 40, 0.5);
+}
+.nap-retegek-list li{
+  list-style: url("../img/icons/sun.png");
+}
+
+.napkitores-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.osszefoglalo-container{
+  width: 250px;
+  height: 250px;
+}
+@media(min-width:576px){
+  .osszefoglalo-container{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media(min-width:768px){
+  .osszefoglalo-container{
+    width: 450px;
+    height: 450px;
+  }
+}
+@media(min-width:992px){
+  .osszefoglalo-container{
+    width: 600px;
+    height: 600px;
+  }
+}
+@media(min-width:1200px){
+  .osszefoglalo-container{
+    width: 850px;
+    height: 600px;
+  }
+}
+@media(min-width:1400px){
+  .osszefoglalo-container{
+    width: 1100px;
+    height: 600px;
+  }
+}
+
+#osszefoglaloVideo{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap: 20px;
+}
+.cards-elet{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  gap: 10px;
+}
+.card{
+  background-color: transparent;
+}
+
+#palyaVenuszFold{
+  min-width: 200px;
+  max-width: 500px;
+  height: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.container-felepites,
+.container-palya,
+.container-kontinensek,
+.container-legkor{
+  min-width: 200px;
+  max-width: 600px;
+  min-height: 200px;
+  max-height: 600px;
+}
+.container-felepites img,
+.container-palya img,
+.container-kontinensek img,
+.container-legkor img{
+  width: 100%;
+  height: 100%;
+}
+
+.merkurModell{
+  width: 200px !important;
+  height: 200px !important;
+}
+@media(min-width:576px){
+  .merkurModell{
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+@media(min-width:768px){
+  .merkurModell{
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+.container-aboutImg{
+  width: fit-content;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#aboutImg{
+  width: 200px;
+  height: 200px;
+}
+@media(min-width:576px){
+  #aboutImg{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media(min-width:768px){
+  #aboutImg{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.container-forras{
+  overflow-x: scroll;
+}
+@media(min-width:576px){
+  .container-forras{
+    overflow-x: hidden;
+  }
+}
+/*------------------------------MAIN------------------------------*/
+
+/*------------------------------FOOTER------------------------------*/
+
+/*A social media linkeket tartalamazó container hátterének megadása*/
+.social-media-container{
+  background-color: #202020;
+}
+/*A social media linkeket tartalamazó container hátterének megadása*/
+
+/*A social media linkek színének megadása*/
+.btn{
+  color: #fff;
+}
+.btn:hover{
+  color: #808080;
+}
+/*A social media linkek színének megadása*/
+
+/*------------------------------FOOTER------------------------------*/
+
+/*------------------------------IFRAME-BY-RESOLUTION------------------------------*/
+.conatiner-video{
+  width: 75%;
+}
+
+.conatiner-video iframe{
+  width: 100%;
+  height: 360px;
+}
+
+@media(min-width: 576px){
+  .conatiner-video{
+    max-width: 560px;
+  }
+  .conatiner-video iframe{
+    height: 360px;
+    width: 100%;
+  }
+}
+
+@media(min-width: 768px){
+  .conatiner-video{
+    max-width: 720px;
+  }
+  .conatiner-video iframe{
+    height: 480px;
+    width: 100%;
+  }
+}
+
+@media(min-width: 992px){
+  .conatiner-video{
+    max-width: 1280px;
+  }
+
+  .conatiner-video iframe{
+    height: 720px;
+    width: 100%;
+  }
+}
+/*------------------------------IFRAME-BY-RESOLUTION------------------------------*/
+
+/*------------SLIDER------------*/
+  .slider-wrap{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    scrollbar-color: grey transparent;
+  }
+
+  .slide{
+    flex-shrink: 0;
+  }
+  .slide a{
+    text-decoration: none;
+  }
+  .sliderCaption{
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: .5rem;
+  }
+/*------------SLIDER------------*/

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Vénusz</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/venus.png">
+</head>
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="../view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="../view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="../view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="../view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="../view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="../view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="../view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="../view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <div class="mx-auto container-main">
+            <main role="main" class="main">
+                <section class="section-bevezetes">
+                    <h1 class="cim1 text-center mx-4" id="sziasztok-urutazok">Sziasztok Űrutazók!</h1>
+                    <p class="text-center">                
+                        Köszöntelek benneteket felfedezőtúránk harmadik állomásánál, a szerelem istennőjéről elnevezett Vénusznál! Biztosan hallottátok már azt a kifejezést, hogy báránybőrbe bújt farkas. Nos a Vénusz egy ékes példája ennek a kifejezésnek. Hogy miért? Tartsatok velem és derítsük ki együtt! Öveket becsatolni! Landolunk a Vénuszon.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-altalanos">
+                    <div class="grid-container">
+                        <div class="w-50 mx-auto row">
+                            <div class="col-xl-6 colList">
+                                <ul class="altalanos-info-list">
+                                    <li class="li-tavolsag">Naptól való távolság: 108,2 millió km</li>
+                                    <li class="li-homerseklet">Felszíni hőmérséklet: 464 °C</li>
+                                    <li class="li-atmero">Átmérő: 12 104 km</li>
+                                    <li class="li-tomeg">Tömeg (Föld = 1): 0,9</li>
+                                    <li class="li-hold">Holdak száma: 0</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 colImage">
+                                <img src="../img/planets/venus.png" id="imgVenusz" alt="Vénusz">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mx-4">
+                        A Vénusz, a Naptól számított harmadik bolygó, Földünk közvetlen szomszédja külső szemlélőként nézve egy felhős, szabad szemmel sárgás fehéres színű ártalmatlan bolygónak tűnik. Sokan a <a href="../view/fold.html" id="linkBolygo">Föld</a> ikertestvéreként emlegetik, ám ha közelebb megyünk, akkor beláthatjuk, hogy Földünk szöges ellentéte. Egy valódi pokol, ugyanis felszínén olyan magas hőmérséklet uralkodik, hogy az ólom minden gond nélkül megolvad rajta. Emellett légköre olyan sűrű, hogy ha a felszínén állnánk és az égboltra tekintenénk, a Nap csupán egy apró fénypont lenne.
+                    </p>
+                    <p class="mx-4">
+                        A fent említett tulajdonságokon felül már azért sem lehetne a Föld ikertestvére, mivel a Vénusz visszafelé forog. Egyéb iránt napja hosszabb, mint egy éve és nincsenek a bolygón évszakok. Feltételezések szerint valamikor egy lakható óceáni világ volt, ám ez bő egymilliárd évvel ezelőtt lehetett. Az azóta elszabadult üvegházhatás miatt a felszíni víz gőzzé vált és a világűrbe szivárgott. Ez is elősegítve a pokoli, vulkanikus felszín kialakulását.
+                    </p>
+                    <p class="mx-4">
+                        A Vénusz csaknem akkora mint a Föld. Ezt jól szemlélteti, hogy míg a Föld átmérője 12 756 km, addig a Vénusz átmérője nem sokkal elmaradva, 12 104 km széles. Ezért és a Földhöz való viszonylagos közelsége miatt (61 millió km), az éjszakai égbolton a Vénusz a legfényesebb objektum a Hold után. Éppen ezért sok ókori civilizáció igen jelentős szerepet tulajdonított neki.
+                    </p>                                
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-palya">
+                    <h2 class="text-center mx-4 mt-4">Pálya</h2>
+                    <p class="mx-4">
+                        A Vénusz pályája a Naprendszer összes bolygóját tekintve a legkevésbé eliptikus. Csaknem pontosan kör alakú, így csak igen kis különbség van a bolygó perihelium és aphelium távolsága között. A Vénusz 224,7 földi nap alatt kerüli meg a Napot. Ezalatt a keringési periódus alatt, igen lassan forog a bolygó a saját tengelye körül, mindezt pedig ellentétes irányban végzi. Ezt retrográd forgásnak nevezzük. Az említett forgás olyannyira lassú, hogy 243 földi napba telik, míg a Vénusz egy teljes fordulatot végez saját tengelye körül. Ennek ellenére viszont két napfelkelte közt csupán 117 földi nap telik el. A bolygón évszakok sem figyelhetőek meg, mivel tengelye csaknem merőleges a pályájának síkjára nézve.
+                    </p>                    
+
+                    <div class="mx-auto container cards">                        
+                        <div class="card">
+                            <img src="../img/planets/Venus/orbitvenus.gif" alt="A Vénusz pályája">
+                            <figcaption class="text-center">A Vénusz pályája</figcaption>
+                        </div>                
+                        <div class="card">
+                            <img src="../img/planets/Venus/venusearth.gif" alt="A Vénusz és a Föld helyzete">
+                            <figcaption class="text-center">A Vénusz és a Föld helyzete</figcaption>
+                        </div>                        
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-szerkezet">
+                    <h2 class="text-center mx-4 mt-4">Szerkezet</h2>
+                    <p class="mx-4">
+                        A Vénusz a négy Föld-típusú bolygó egyike és ez hasonlít leginkább a Földhöz. Sűrű, sziklás világ, mely kicsit kisebb méretű és sűrűségű a Földhöz viszonyítva. Szakemberek úgy vélik, mivel mérete és sűrűsége is hasonló szülőbolygónkéhoz, ezért belső szerkezete, magjának mérete és köpenyének vastagsága is közel azonos lehet a Földéhez. Ebből következtetnek arra, hogy a Vénusz magjának is van egy szilárd belső és egy olvadt külső rétege. Ám ennek ellenére a Vénusznak nincs a Földéhez hasonló, belső mag által generált mágneses tere, mivel mint azt már említettem, a bolygó rendkívül lassan forog.
+                    </p>
+
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Venus/structurevenus.png" alt="A Vénusz felépítése">
+                        <figcaption class="text-center">A Vénusz felépítése</figcaption>                                            
+                    </div>
+
+                    <p class="mx-4">
+                        A Vénusz belső hője, amit a köpenyben történő radioaktív bomlás kelt, vulkanizmus formájában szabadul a felszínre. Többek között ezen vulkanizmus által keletkező vulkanikus gázok játszottak szerepet a bolygó elüvegházasodásához.
+                    </p>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+                
+                <section class="section-felszin">
+                    <h2 class="text-center mx-4 mt-4">Felszín</h2>
+                    <p class="mx-4">
+                        A Vénusz forrongó felszíne heves viták az elismert bolygókutatók körében is. A legelfogadottabb elmélet szerint, körülbelül 350-750 millió évvel ezelőtt egy katasztofális, bolygószintű felszínre kerülés történt. Röviden, ez azt jelenti, hogy a Vénusz teljesen eltüntette korai felszínének legtöbb nyomát. A fő okoknak a vulkanizmust és a tektonikus erőket szokták felhozni, melyek a felszín megdőlését és hatalmas kitöréseket eredményeztek.
+                    </p>
+                    <p class="mx-4">
+                        Ezt a feltételezést erősíti meg az a tény, miszerint a Vénusz felszínén sokkal több vulkán található, mint a Földén. Ezek között található 167 olyan óriásvulkán, melyek átmérője egyenként meghaladja a 100 km-t is. Ezeken felül több jel is arra utal, hogy a Vénusz felszínén jelenleg is folyik vulkáni aktivitás. A szovjet Venyera-program űrszondái (Venyera-11 és Venyera-12) ugyanis állandó villámlásokat észleltek. A Venyera-12 a leszállását követően egy igen erős dörgést észlelt a műszereivel.
+                    </p>
+                    <p class="mx-4">
+                        További érdekesség, hogy a Vénusz felszínén nagyjából 1000 becsapódási kráter található, többé-kevésbé egyenletesen szétszórva. Más kráterezett égitesteken, mint a Föld és a Hold, a kártereken erózió jelei figyelhetőek meg. A Holdon például a lepusztulást későbbi becsapódások, a Földön pedig a szél és az eső erróziója okozza. A Vénuszon azonban a kráterek 85%-a még a kezdeti állapotában van. Ez arra utal, hogy a bolygón 500 millió éveel ezelőtt teljesen újjáalakult a felszín. A vénuszi kráterek átmérője 3 és 280 km közötti. Ez azért van, mert a sűrű légkör miatt, a kisebb sebességű objektumok annyira lelassulnak a légkörben, hogy nem hoznak létre krátert.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/venus.glb" camera-controls alt="A Vénusz 3D-s modellje "></model-viewer>
+                    <figcaption class="mb-4 text-center">A Vénusz 3D-s modellje</figcaption> 
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/venussurface.glb" camera-controls alt="A Vénusz felszínének 3D-s modellje "></model-viewer>
+                    <figcaption class="mb-4 text-center">A Vénusz felszínének 3D-s modellje</figcaption>
+
+                    <p class="mx-4">
+                        A fentebb már említett majdnem 200 vulkán ellenére a Vénusz felszíne viszonylag simának tekinthető. A Pioneer-1 űrszonda méréseinek eredménye alapján, a bolygó felületének 60%-án a magasságkülönbségek nem haladják meg az 1 km-t. Ezen felül az látszik, hogy a Vénusznak vannak nagy kontinensei, de ezen kontinensek összterülete felszínének csupán 5%-át teszik ki.
+                    </p>
+                    <p class="mx-4">
+                        Egy másik űrszonda, a Magellán, 1990 és 1994 között teljesen feltérképezte a Vénusz felszínét, ezáltal pontos kép áll a tudósok rendelkezésére a felszíni alakzatokról. Azt várták a bolygótól, hogy a földihez hasonló geológiai alakzatokkal rendelkezik, viszont egy lényeges dologban különbözik. Nincsenek mozgó kéreglemezei a bolygónak, így felszíne inkább fel-le mozog. Ennek ellenére nagyon sok földihez hasonló alakzat alakult ki, ám vannak szokatlanok is, mint például az arachnoidák, melyek pókszerű vulkanikus alakzatok, központi kör alakú mélyedéssel.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-legkor">
+                    <h2 class="text-center mx-4 mt-4">Légkör</h2>
+                    <p class="mx-4">
+                        A Vénusz légköréről és annak összetételéről a legtöbbet a szovjet Venyera űrszondák méréseiből tudtak meg a tudósok. Ezek az űrszondák sikeresen landoltak a bolygó elképesztően forró és szélsőséges felszínén, majd ameddig a műszereik a forróságtól meg nem hibásodtak, folyamatosan adatokat szolgáltattak a Föld felé. Ezen mérések alapján tudjuk, hogy a Vénusz széndioxidban gazdag légköre (96,5%) a felszíntől mintegy 80 kilóméterig nyúlik fel és 3 rétegre különül el.
+                    </p>
+                    <p class="mx-4"> 
+                        A Vénuszt érő napsugárzást a felhőzet visszaveri a világűrbe, így a bolygó egy borús, narancsszínű világ, ugyanis a napfény csupán 20%-a jut el a felszínre, majd az onnan visszaverődő infravörös sugárzást a légköri széndioxid visszatartja. Érdekes tény, hogy a Vénusz légkörében körülbelül 500-szor annyi ősi eredetű argon, és 2500-szor annyi neon van, mint a Földében. Ám a széndioxidhoz képest ezen elemek mennyisége elenyésző. Az a széndioxid, ami a Vénuszon a légkörben található, a Földön karbonátos kőzetek belsejében található. Ennek köszönhetően kerülte el a Föld a Vénusz sorsát. Közvetlen szomszédunk légkörének oxigéntartalma arra enged következtetni, hogy a bolygónak valamikor tekintélyes mennyiségű vízkészlete volt, ám ennek nagy részét az elszabaduló üvegházhatás miatt szinte teljesen elvesztette. Az a kevés mennyiségű víz, ami a bolygón maradt, a felhőzetben lébő kénsavcseppekben van megkötve.
+                    </p>
+                    <p class="mx-4">
+                        A Vénusz mai atmoszférájában a kémiai reakciók, illetve a szállítási és a sugárzási folyamatok szabályozzák a jelentősebb nyomelemek mennyiségét. A Kénsav aeroszolok, melyek a Vénusz felhőit és fátyolfelhőit alkotják, fontos szerepet játszanak a bolygó légkörének kémiájában és sugárzási környezetében. A vízgőz és a kénsav körforgása biztosítja az állandó felhőréteg fennmaradását, valamint a légkör és a felszín közti rakciókat.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-magnetoszfera">
+                    <h2 class="text-center mx-4 mt-4">Magnetoszféra</h2>
+                    <p class="mx-4">
+                        A Vénusznak nincs belső mágneses tere. A sűrű légkör következtében ionoszférája viszont van, amely főként a Napból érkező fotonok ionizáló hatására keletkezik. A Napból érkező töltött részecskék áramának leginkább a Vénusz ionoszférája jelent akadályt. A bolygóhoz érve a napszél lelassul, körbefolyik az akadályon és a napszélbe belefagyott mágneses tér feltorlódik, illetve ráhajlik a bolygóra. Ez a mágneses tér a vezető ionoszférában áramlatokat kelt, melyek mágneses teret hoznak létre. Ezek alapján érthető, hogy az ilyen nem mágneses bolygók rendkívül érzékenyek a napszél változásaira.
+                    </p>
+
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Venus/ionospherevenus.jpg" alt="A Vénusz ionoszférája">
+                        <figcaption class="text-center">A Vénusz ionoszférája</figcaption>                                            
+                    </div>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-elet">
+                    <h2 class="text-center mx-4 mt-4">Élet a bolygón</h2>
+                    <p class="mx-4">
+                        Körülbelül 50 kilóméterrel a Vénusz felszíne fölött, a légkör hőmérséklete körülbelül 70 °C. Ez elméletben alkalmas lehet "extrémofil" életformák számára, emellett a légköri nyomás is hasonló, mint amilyen a Földön. A tudósok megfigyelték, hogy a Vénusz felhőinek tetején, ahol nagyjából 360 km/h-s szelek fújnak, tartós, sötét csíkok jelennek meg, melyek elnyelik az ultraibolya sugárzást. Egyes megfigyelések szerint ezek olyan finom részecskék, mint jégkristályok és vas-klorid.
+                    </p>
+                    <p class="mx-4">
+                        Ezzel ellentétben vannak olyan tudósok, akik mikrobiális életként tartják számon ezeket a sötét sávokat. Szerintük a légkörben megtalálható kénatomok kötései egyfajta bevonatot biztosíthatnak a mikróbák számára, amely megvédi őket a kénsavtól és elnyelik a káros ultraibolya sugárzást és látható fényként sugározzák vissza. Viszont sajnos egyik hipotézis helytállóságára sincs mindent kizáró bizonyíték, így egyelőre az a nézet terjedt el, hogy a Vénuszon semmiféle élet nem lelhető fel.
+                    </p>                
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-holdak">
+                    <h2 class="text-center mx-4 mt-4">Holdak</h2>
+                    <p class="mx-4 text-center">
+                        A Vénusz nem rendelkezik holdakkal.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-gyuruk">
+                    <h2 class="text-center mx-4 mt-4">Gyűrűk</h2>
+                    <p class="mx-4 text-center">
+                        A Vénusz nem rendelkezik gyűrűkkel.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="osszefoglalo-video">
+                    <h2 class="text-center mx-4 mt-4">Összefoglaló videó</h2>
+                    <p class="mx-4 text-center">
+                        Elérkeztünk fejezetünk végére, melyben a Vénuszról tudhattunk meg többet. Most pedig kérlek benneteket tekintsétek meg az Űrkutatás Magyarul youtube csatorna videóját, melyben egy velős minden igényt kielégítő bemutatót láthattok közvetlen bolygótestvérünkről.
+                    </p>
+                    <div class="mx-auto osszefoglalo-container">
+                        <iframe src="https://www.youtube.com/embed/watch?v=JUnjiIjFL7Y&list=PLP33AR3c0LjvyPiSmWXuIAMvI2Y5mwsIc&index=3" frameborder="0" id="osszefoglaloVideo"></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

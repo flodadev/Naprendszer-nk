@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Uránusz</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/uranus.png">
+</head>
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="../view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="../view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="../view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="../view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="../view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="../view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="../view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="../view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <div class="mx-auto container-main">
+            <main role="main" class="main">
+                <section class="section-bevezetes">
+                    <h1 class="cim1 text-center mx-4" id="sziasztok-urutazok">Sziasztok Űrutazók!</h1>
+                    <p class="text-center">                
+                        Köszöntelek benneteket űrutazásun nyolcadik állomásánál, a világoskék jégóriásnál, az Uránusznál! Lassacskán elérkezünk Naprendszerünk szélére. Ez már a fagy és a hideg birodalma, mivel a napsugarak ereje itt már a távolság miatt igen csekély. Erre jó példa az Uránusz is. Hogy miért? Tartsatok velem és kiderítjük, mit is rejteget nekünk ez a fagyos jégóriás!
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-altalanos">
+                    <div class="grid-container">
+                        <div class="w-50 mx-auto row">
+                            <div class="col-xl-6 colList">
+                                <ul class="altalanos-info-list">
+                                    <li class="li-tavolsag">Naptól való távolság: 2,87 milliárd km</li>
+                                    <li class="li-homerseklet">Hőmérséklet a felhők tetején: -214 °C</li>
+                                    <li class="li-atmero">Átmérő: 51 118 km</li>
+                                    <li class="li-tomeg">Tömeg (Föld = 1): 14,5</li>
+                                    <li class="li-hold">Holdak száma: 27</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 colImage">
+                                <img src="../img/planets/uranus.png" id="imgUranusz" alt="Uranusz">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mx-4">
+                        Az Uránusz a Naptól számított hetedik bolygó. Naprendszerünk harmadik legnagyobbja. Hideg és rendkívül szeles. A jégóriást 13 halvány gyűrű és 27 kis hold veszi körül. Érdekesség, hogy az Uránusz volt az első bolygó, amelyet távcsővel fedeztek fel. Ezt a felfedezést egy William Herschel nevű csillagász tette 1781-ben, bár ő eredetileg azt hitte, hogy egy üstököst, vagy egy csillagot fedezett fel.
+                    </p>
+                    <p class="mx-4">
+                        51 118 kilóméteres átmérőjével csaknem négyszer szélesebb mint a Föld. Távolsága a Naptól átlagosan 2,9 milliárd kilóméter, amely 19,8 Csillagászati Egységnek felel meg. Ebbe a távolságba már viszonylag lassan, 2 óra 40 perc alatt jut el a napból áradó fény.
+                    </p>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-palya">
+                    <h2 class="text-center mx-4 mt-4">Pálya</h2>
+                    <p class="mx-4">
+                        Egy nap az Uránuszon körülbelül 17 órába telik. Pályájának nagysága miatt viszont a Nap körül egy kört 84 földi év alatt tesz meg. Egy érdekes adat az Uránuszról, miszerint ez az egyetlen bolygó a Naprendszerben, mely majdnem derékszögben áll pályájának síkjával. Dőlésszöge 97,77°, mely több mint valószínű egy legalább Föld méretű objektummal való ütközés eredménye, még valamikor réges-régről. Ez az egyedülálló dőlésszög okozza a legszélsőségesebb viharokat az egész Naprendszerben. Az uráni év közel egynegyedében a Nap közvetlenül mindkét pólus fölött süt, míg a bolygó másik felét nagyjából 21 évig tartó sötétség uralja.
+                    </p>
+                    <p class="mx-4">
+                        A Vénusz mellett az Uránusz a másik olyan bolygó, mely a megszokott nyugat-keleti helyett, kelet-nyugati irányban forog saját tengelye körül.
+                    </p>           
+
+                    <div class="mx-auto mb-4 container cards">                        
+                        <div class="card">
+                            <img src="../img/planets/Uranus/orbituranus.png" alt="Az Uránusz pályája">
+                            <figcaption class="text-center">Az Uránusz pályája (világoskék)</figcaption>
+                        </div>                
+                        <div class="card">
+                            <img src="../img/planets/Uranus/seasonuranus.jpeg" alt="Évszakok az Uránuszon">
+                            <figcaption class="text-center">Évszakok az Uránuszon</figcaption>
+                        </div>                                           
+                    </div>  
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-szerkezet">
+                    <h2 class="text-center mx-4 mt-4">Szerkezet</h2>
+                    <p class="mx-4">
+                        Az Uránusz négyszer akkora, mint a Föld. Tömege és térfogatának aránya miatt kisebb sűrűségű, azonban ez a tömeg nem teszi lehetővé, hogy fő alkotórésze a hidrogén legyen, mint a többi nagybolygó: a Jupiter és a Szaturnusz esetében. Fő alkotója a víz-, metán- és ammóniajég, melyeket egy légnemű réteg vesz körül. Ezért az Uránuszt a Neptunusszal együtt a jégóriások csoportjába sorolják. A jeges rétegben keringő áramok gerjesztik a bolygó mágneses terét. Legbelül egy kicsiny, kőzetekből és jégből álló mag foglal helyet.
+                    </p>
+                    
+                    <div class="mx-auto mb-2 container container-felepites">
+                        <img src="../img/planets/Uranus/structureuranus.jpg" alt="Az Uránusz szerkezete">
+                        <figcaption class="text-center">A Uránusz szerkezete</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+                
+                <section class="section-felszin">
+                    <h2 class="text-center mx-4 mt-4">Felszín</h2>
+                    <p class="mx-4 text-center">
+                        Mivel az Uránusz esetében egy jégóriásról beszélünk, nincs igazi felszíne. A bolygó többnyire kavargó folyadékokból áll. Bár egy űrhajónak nem lenne hová leszállnia az Uránuszon, de a légkörén sem tudna sértetlenül átrepülni. A rendkívüli nyomás és hőmérséklet tönkretenné azt.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/uranus.glb" camera-controls alt="Az Uránusz 3D-s modellje"></model-viewer>
+                    <figcaption class="mb-4 text-center">Az Uránusz 3D-s modellje</figcaption>    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-legkor">
+                    <h2 class="text-center mx-4 mt-4">Légkör</h2>
+                    <p class="mx-4">
+                        Az Uránusz kék színét az okozza, hogy a bolygó alacsony hőmérséklete mellett képződött metánjég a napsugárzás vörös hullámhosszát elnyeli. A Voyager-2 a felhők hőmérsékletét mínusz 214 Celsius fokosnak mérte. A Nap ultraibolya sugárzásának hatására a metánból ködrészecskék képződnek és ezek elrejtik az alsóbb rétegeket, s ez az Uránusznak egy nyugodt képet kölcsönöz.
+                    </p>
+                    <p class="mx-4">
+                        Pedig az alsóbb rétegekben folyamatos változások történnek. A Voyager-2 adataiból kiderült, hogy légkörében ammónia- és vízjégfelhők mozognak. Körülbelül ugyanannyi energiát sugároz ki, mint amennyit a Naptól kap, így nincs jelentős belső hője, mely nagy és heves időjárási rendszereket tartana fenn. A légkörnek 82,5%-a hidrogén, 15,2%-a hélium és 2,3%-a metán. 
+                    </p>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-magnetoszfera">
+                    <h2 class="text-center mx-4 mt-4">Magnetoszféra</h2>
+                    <p class="mx-4">
+                        Az Uránusznak szokatlan, szabálytalan alakú magnetoszférája van. A mágneses mezők általában a bolygó forgásával egyvonalban vannak, de az Uránusz mágneses mezeje felborult: a mágneses tengelye közel 60 fokkal el van dőlve a bolygó forgástengelyéhez képest és a bolygó középpontjától is annak sugarának egyharmadával van eltolva.
+                    </p>
+                    <p class="mx-4">
+                        A ferde mágneses mező miatt az Uránuszon a sarkok nem a pólusokkal egy vonalban vannak, mint a Földön, a Jupiteren és a Szaturnuszon. Az Uránusz mögött, a Nappal szemben lévő magnetoszféra csóvája több millió kilométerre nyúlik be az űrbe. Mágneses mezővonalait az Uránusz oldalirányú forgása hosszú dugóhúzó alakúvá csavarja.
+                    </p>
+
+                    <div class="mx-auto mb-4 container container-felepites">
+                        <img src="../img/planets/Uranus/magnetosphereuranus.jpg" alt="Az Uránusz mágneses tere">
+                        <figcaption class="text-center">Az Uránusz mágneses tere</figcaption>                                            
+                    </div>
+                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-elet">
+                    <h2 class="text-center mx-4 mt-4">Élet a bolygón</h2>
+                    <p class="mx-4 text-center">
+                        Az Uránusz szélsőséges környezete nem kedvez az általunk ismert élet kialakulásának. A bolygót jellemző hőmérséklet, nyomás és anyagok valószínűleg túl szélsőségesek és illékonyak ahhoz, hogy az organizmusok alkalmazkodni tudjanak hozzájuk.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-holdak">
+                    <h2 class="text-center mx-4 mt-4">Holdak</h2>                                        
+                    <p class="mx-4">
+                        Az Uránusznak 27 holdja ismert. Az 5 nagyobb holdat földi távcsövekkel fedezték fel. Ezek: Ariel, Umbriel, Titania, Oberon és Caliban. Megfigyelésüket a Voyager-2 végezte az 1985-86 évi közelrepüléskor. Ezekből néhány:
+                    </p>
+                    
+                    <div class="mx-auto mb-4 container cards">                        
+                        <div class="card">
+                            <img src="../img/planets/Uranus/ariel.jpg" alt="Ariel">
+                            <figcaption class="text-center">Ariel</figcaption>
+                        </div>                
+                        <div class="card">
+                            <img src="../img/planets/Uranus/umbriel.jpg" alt="Umbriel">
+                            <figcaption class="text-center">Umbriel</figcaption>
+                        </div>
+                        <div class="card">
+                            <img src="../img/planets/Uranus/titania.jpg" alt="Titania">
+                            <figcaption class="text-center">Titania</figcaption>
+                        </div>                                            
+                    </div>  
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-gyuruk">
+                    <h2 class="text-center mx-4 mt-4">Gyűrűk</h2>
+                    <p class="mx-4">
+                        Az Uránusztól 12.400 km-re kezdődik és 25.600 km-ig tart a 11 gyűrű. A gyűrűk messze vannak egymástól, keskenyek, és több a rés, mint a gyűrű. Porrészecskékből és szénszemcsékből állnak, melyek mérete néhány centimétertől néhány méterig terjed. A gyűrűk nem pontosan az egyenlítői síkban vannak és nem pontosan köralakúak, szélességük is eltérő. A bolygó gyűrűit egy csillagfedés alkalmával fedezték fel. 
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="osszefoglalo-video">
+                    <h2 class="text-center mx-4 mt-4">Összefoglaló videó</h2>
+                    <p class="mx-4 text-center">
+                        Elérkeztünk fejezetünk végére, melyben az Uránuszról tudhattunk meg többet. Most pedig kérlek benneteket tekintsétek meg az Űrkutatás Magyarul youtube csatorna videóját, melyben egy velős minden igényt kielégítő bemutatót láthattok a Naprendszer kék és jeges óriásáról.
+                    </p>
+                    <div class="mx-auto osszefoglalo-container">
+                        <iframe src="https://www.youtube.com/embed/watch?v=JUnjiIjFL7Y&list=PLP33AR3c0LjvyPiSmWXuIAMvI2Y5mwsIc&index=10" frameborder="0" id="osszefoglaloVideo"></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ca6e554a49.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Föld</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/earth.png">
+</head>
+<body>
+    <section class="section-navigationbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--Bal oldal-->
+                <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bolygók
+                            </a>
+                            <ul class="dropdown-menu menuBolygok" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item disabled">Központi csillagok</a></li>
+                                <li><a class="dropdown-item" href="../view/nap.html">Nap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Kőzetbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/merkur.html">Merkúr</a></li>
+                                <li><a class="dropdown-item" href="../view/venusz.html">Vénusz</a></li>
+                                <li><a class="dropdown-item" href="../view/fold.html">Föld</a></li>
+                                <li><a class="dropdown-item" href="../view/mars.html">Mars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Gázbolygók</a></li>
+                                <li><a class="dropdown-item" href="../view/jupiter.html">Jupiter</a></li>
+                                <li><a class="dropdown-item" href="../view/szaturnusz.html">Szaturnusz</a></li>
+                                <li><a class="dropdown-item" href="../view/uranusz.html">Uránusz</a></li>
+                                <li><a class="dropdown-item" href="../view/neptunusz.html">Neptunusz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">Törpe bolgyók</a></li>
+                                <li><a class="dropdown-item" href="../view/pluto.html">Plútó</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Bal oldal-->
+
+                <!--Navbar Brand + Hamburger Icon-->
+                <a class="navbar-brand order-1 mr-lg-0" href="#">
+                    Naprendszerünk
+                </a>
+                <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navbar Brand + Hamburger Icon-->
+
+                <!--Jobb oldal-->
+                <div class="collapse navbar-collapse order-lg-3 order-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/rolunk.html">Rólunk</a>
+                        </li>                        
+                    </ul>
+                </div>
+                <!--Jobb oldal-->
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-main">
+        <div class="mx-auto container-main">
+            <main role="main" class="main">
+                <section class="section-bevezetes">
+                    <h1 class="cim1 text-center mx-4" id="sziasztok-urutazok">Sziasztok Űrutazók!</h1>
+                    <p class="text-center">                
+                        Köszöntelek benneteket felfedezőtúránk negyedik állomásánál! Hazaértünk! Következő bolygónk nem más mint a Föld. Biztos vagyok benne, hogy senkinek sem kell bemutatni. Ez a hely ahol mindennapjainkat töltjük. Élővilága egyedülálló és változatos. Viszont abban is biztos vagyok, hogy akad olyan információ amit még nem tudtatok. Nos tartsatok velem, nézzük meg ezeket és bővítsük együtt tudásunkat szülőbolygónkról!
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-altalanos">
+                    <div class="grid-container">
+                        <div class="w-50 mx-auto row">
+                            <div class="col-xl-6 colList">
+                                <ul class="altalanos-info-list">
+                                    <li class="li-tavolsag">Naptól való távolság: 149,6 millió km</li>
+                                    <li class="li-homerseklet">Felszíni hőmérséklet: 15 °C</li>
+                                    <li class="li-atmero">Átmérő: 12 756 km</li>
+                                    <li class="li-tomeg">Tömeg (Föld = 1): 1</li>
+                                    <li class="li-hold">Holdak száma: 1</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 colImage">
+                                <img src="../img/planets/earth.png" id="imgFold" alt="Föld">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mx-4">
+                        Földünk a Naptól számított harmadik és a legnagyobb kőzetbolygó. Emellett az egyetlen ismert hely a Naprendszerben, sőt a közeli galaxisokban is ahol élőlények élnek. Bár a Föld csak az ötödik legynagyobb bolygó a Naprendszerben, ez az egyetlen világ a rendszeren belül, melynek felszínén folyékony víz található. 
+                    </p>
+                    <p class="mx-4">
+                        6371 kilóméteres sugarával a legnagyobb a Föld-típusú bolygók közül. Átlagosan 150 millió kilóméter távolságra van központi csillagunktól, a Naptól. Ez egy Csillagászati Egységnek felel meg, melyet az űrbéli távolságok összehasonlításának egyszerűsítésére vezettek be. Ebből a távolságból a Napból áradó fénynek körülbelül 8 percbe telik, mire eléri bolygónkat.
+                    </p>                                                   
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-palya">
+                    <h2 class="text-center mx-4 mt-4">Pálya</h2>
+                    <p class="mx-4">
+                        A Föld 108 ezer kilóméteres óránkénti sebességgel kering a Nap körül. A többi bolygóhoz hasonlóan eliptikus pályán, ami azonban majdnem kör alakú. A Föld pályasíkját eliptikának nevezzük, ezzel zár be forgástengelye 23,5 fokos szöget. Ez a dőlés okozza az évszakok kialakulását, mivel annak függvényében, hogy a Napból érkező sugarak milyen szögben érik a Földet, annak függvényében különböző mértékben melegítik fel a felszínt. A Föld pályájának excentricitása (körtől való eltérésének mértéke) 100 ezer éves ciklussal, míg forgástengelyének hajlásszöge 42 ezer éves ciklussal váltakozik.
+                    </p>                    
+                    <p class="mx-4">
+                        A Föld saját tengelye körül, 23,9 óránként tesz meg egy teljes fordulatot. Míg a már említett keringési sebességgel a Nap körül 365,25 nap alatt tesz esz egy teljes kört. Ez a plusz negyed nap gondot okoz az általunk ismert naptárrendszer számára, ami egy évet, mint tudjuk 365 naposnak számol. Azért, hogy a naptárunk összhangban legyen a Föld, Nap körüli keringésével, négy évente egy napot hozzáadunk az évhez. Ezt nevezzük szökőévnek.
+                    </p>
+
+                    <div class="mx-auto mb-2 container container-palya">
+                        <img src="../img/planets/Earth/orbitearth.jpg" alt="A Föld pályája">
+                        <figcaption class="text-center">A Föld pályája</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-szerkezet">
+                    <h2 class="text-center mx-4 mt-4">Szerkezet</h2>
+                    <p class="mx-4">
+                        A Föld forgásának következtében egyenlítői vidéke kisse, kb. 21 kilóméterrel kidomborodik a pólusokhoz képest. A Föld belsejében 3 fő réteget különböztethetünk meg. A belső, központi mag átmérőjé mintegy 7000 km és főleg vasból, illetve nikkelből áll. Magjának szilárd, központi részének hőmérséklete körülbelül 4700 °C. Külső része viszont folyékony halmazállapotú. A magot egy szilárd, magnéziumban és vasban gazdag köpeny veszi körül, ami kb. 2800 km vastag. Ezt zárja egy ún. kéreg, mely sokféle kőzetből áll, de túlnyomó részt szilikátokat tartalmaz.
+                    </p>                    
+
+                    <div class="mx-auto container cards">                        
+                        <div class="card">
+                            <img src="../img/planets/Earth/litosphereplates.jpg" alt="Litoszféralemezek">
+                            <figcaption class="text-center">Litoszféralemezek</figcaption>
+                        </div>                
+                        <div class="card">
+                            <img src="../img/planets/Earth/structureearth.jpg" alt="A Föld felépítése">
+                            <figcaption class="text-center">A Föld felépítése</figcaption>
+                        </div>                        
+                    </div>
+
+                    <p class="mx-4">
+                        Mai tudásunk szerint a Föld az egyetlen olyan égitest a Naprendszerben, ahol ma is zajlanak lemeztektonikai folyamatok. Az elmélet egyik legfontosabb alapfogalma a litoszféra. Az elfogadott tézis szerint a litoszféra a földkéregből és az alatta lévő földöpeny legfelső részéből álló, mechanikailag összefüggő együttes. Földünk felszíne 6 nagy és kb. 20-25 kisebb lemezre bomlik szét. Ezek a lemezek meglehetősen merevek. A litoszféralemezek egyránt hordozhatnak tengeri, óceáni területeket és kontinenseket is. Az egyes lemezek határait erős tektonikai tevékenység jellemzi, mely földrengésekben és vulkanizmusban nyílvánul meg.
+                    </p>
+
+                    <div class="mx-auto container cards">                        
+                        <div class="card">
+                            <video src="../img/planets/Earth/volcano.mp4" muted autoplay loop></video>
+                            <figcaption class="text-center">Felszíni vulkán</figcaption>
+                        </div>                
+                        <div class="card">
+                            <video src="../img/planets/Earth/underwatervolcano.mp4" muted autoplay loop></video>
+                            <figcaption class="text-center">Óceáni forró pont</figcaption>
+                        </div>                        
+                    </div>
+
+                    <p class="mx-4">
+                        A lemeztektonika egyik ága a gomolyaáramlásokkal foglalkozik. Ennek ismerete szükséges a többi kőzetbolygó vulkánosságának megértéséhez, hiszen ezen kivételtől eltekintve más tektonikus jelensége nincsenek ezeken a bolygókon.
+                        Bolygónk felszínén a forró pontok teljesen rendszertelenül helyezkednek el és viszonylag kicsik. Néhányszor 10 vagy 100 km-es átmérőjűek. A Forró pontok területén a földkéreg kissé felemelkedik, mintegy dómszerűen kiduzzad. Itt a Föld hőáramlása erősebb mint máshol. Ezeken a helyeken felelé tartó anyagáramlás zajlik, melyek nagy mélységből indulnak. A forró pontok az elmúlt 200 millió évben nem változott, viszont a kőzetlemezek mozgása szembetűnő. A Csendes-óceánon például három olyan szigetcsoport van, ahol jól nyomon követhető az elmozdulás. Az egyik ilyen a Hawaii-szigetek. Amint a csendes-óceáni lemez elmozdult a forró pont felett az utóbbi 80 millió évben, ott újabb és újabb szigetek jöttek létre.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+                
+                <section class="section-felszin">
+                    <h2 class="text-center mx-4 mt-4">Felszín</h2>
+                    <p class="mx-4">
+                        A Föld felszíne rendkívül változatos domborzati formákat hordoz. A felszín közel 71%-át víz borítja, a fennmaradó 29%-ot szárazföldnek nevezzük. A kéreg víz alatti teteje hasonlóan tagol, mint a szárazföldek felszíne: hegyek, hegyláncok, árkok, síkságok váltogatják egymást mindekettőnél. Mint azt már fentebb tárgyaltam, bolygónk felszíne folyamatosan változik a vulkáni tevékenységek és a lemeztektonika hatására, emellett a felszínen az erózió is folyamatosan alakít a már meglévő felszínen. Ugyanakkor fontos tisztázni, hogy ezek a folyamatok több ezer, vagy több millió év alatt látszódnak meg igazán.
+                    </p>
+
+                    <h4 class="text-center mx-4 mt-4">Óceánok</h4>
+                    <p class="mx-4">
+                        A Föld egyik legfontosabb jellemvonása a felszínét nagy mennyiségben, folyékony formában borító víz, ami miatt az űrkorszak kezdetén készült felvételek alapján otthonunkat "Kék bolygó"-ként is szokás emlegetni. Ezeket a vizeket összefogalóan hidroszférának nevezzük, melyek összességében a földfelszín nagyobb részét, mintegy 71%-át borítják. A felszíni vizek többféle formában vannak jelen. Kisebb-nagyobb folyóvizek (pl. erek, patakok, folyók) és különböző méretű állóvizek (pl. tavak, tengerek, óceánok) formájában. Ezeket a vizeket két fő csoportra osztjuk: sós és édesvizek. Ezek közül előbbiek vannak túlsúlyban, ugyanis a hidroszféra 97,5%-a sósvíz, míg csupán csak a maradék 2,5% édesvíz, melynek viszont 68,7%-a jég formájában található meg az északi jégsapkában. A hidroszféra legmeghatározóbb formái az óceánok. Ezek közül a három legkiemelkedőbb:
+                    </p>
+
+                    <div class="mx-auto container oceanok-list-container">
+                        <ul>
+                            <li>Csendes-óceán</li>
+                            <li>Atlanti-óceán</li>
+                            <li>Indiai-óceán</li>
+                        </ul>
+                    </div>
+
+                    <p class="mx-4">
+                        Az óceeánok 1,37 x 10<sup>9</sup> km<sup>3</sup>, azaz 1,37 milliárd km<sup>3</sup> térfogatot, a Föld térfogatának (kb. 1083 milliárd km<sup>3</sup>) mindössze 800-ad részét teszik ki. Ha az óceánok tömegét hasonlítjuk a bolygó tömegéhez, akkor még kisebb számot, mindössze a bolygó tömegének 0,25%-át kapjuk.
+                    </p>
+                    <p class="mx-4">
+                        A földfelszín egyenetlensége miatt a világtengerek mélysége széles skálán mozog. Az óceánok legmélyebb pontja a Csendes-óceánon, a Mariana-árokban fekszik, 11 022 méter mélyen. Átlagos mélysége 3 711 méter.
+                    </p>                    
+                    <p class="mx-4">
+                        A tengerek vizének átlagos sótartalma 35‰ (ezrelék). Óceánjaink jelentős hatást gyakorolnak a Föld klímájára: hatalmas hőtárolóként és a tengeri áramlatok révén hőszállító közegként működnek. A tengervíz hőhatároló és hőelosztó tulajdonságainak vannak állandó és véletlenszerű hatásai. Előbbire példa a Golf-áramlat, mely a trópusok melegét szállítja az Atlanti-óceánon a magasabb északi szélességek irányába.
+                    </p>
+                    <p class="mx-4">
+                        Az óceánok az élet bölcsői és hatalmas tárházai. Biológiai kutatások szerint a földi élet a tengervizekben alakult ki, és csak később hódította meg a szárazföldet. A ma létező fajokból pedig több százezer a tengerek lakója.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/earth.glb" camera-controls alt="A Föld 3D-s modellje "></model-viewer>
+                    <figcaption class="mb-4 text-center">A Föld 3D-s modellje</figcaption>
+
+                    <h4 class="text-center mx-4 mt-4">Kontinensek</h4>
+                    <p class="mx-4">
+                        A földfelszín 29,2%-a szárazföld, amely kontinensekből és szigetekből tevődik össze. A kéreg kontinentális része vastagabb az óceánfenéki kéregnél és rendkívül tagolt. A felszín legmagasabb pontja a Mount Everest, 8848 méteres magasságával, míg a legalacsonyabb pont - 418 méteren fekszik a Jordánia és Izrael között fekvő Holt-tengernél. A szárazföldek átlagos szintje 840 m a tengerszint felett található.
+                    </p>
+                    <p class="mx-4">
+                        A földfelszín többféle anyagból épül fel, főként kőzetekből és a talajból. A kőzetek elsősorban vulkanikus eredetűek (gránit és andezit), olyan kisebb sűrűségű anyagból épülnek fel, amelyet korábbi korok vulkánjai hoztak felszínre kéreg alól, ezzel folyamatosan megújítva a földfelszínt. Kisebb mennyiségben nagyobb sűrűségű kőzet, bazalt is található a felszínt felépítő kőzetek között. Egy másik fő kőzettípus az üledékes kőzet, valamilyen egykori tengerfenéken rétegesen lerakódott és kővé tömörödött anyag, amely a földfelszín 75%-át beborítja, ám mennyiségét tekintve mindössze 5%-ot tesz ki a kéreg felső 10 kilométer vastag rétegében.
+                    </p>
+                    <p class="mx-4">
+                        A harmadik meghatározó kőzettípus a metamorf kőzetek családja. Ezen kőzettípus korábban már létezett más kőzetekből jön létre valamilyen magas hőfokon és/vagy magas nyomáson végbemenő geológiai folyamat során. A földfelszín többi részén finom szemcsézetűbb anyag található. A talaj az alapkőzet fizikai, majd kémiai málásával jött létre, majd egy biológiai folyamat során szerves anyagokkal telítődve nyerte el jelenlegi formáját. Az emberi élet szempontjából a talaj a legjelentősebb a felszínt felépítő anyagokból, hisz ez alkalmas egyedül mezőgazdasági művelére, élelmiszertermelésre.
+                    </p>
+                    <p class="mx-4">
+                        A földrajztudomány a földfelszínt nagyobb egységekre bontja, ezek a kontinensek:
+                    </p>
+
+                    <div class="mx-auto container kontinensek-list-container">
+                        <ul>
+                            <li>Európa</li>
+                            <li>Ázsia</li>
+                            <li>Afrika</li>
+                            <li>Amerika</li>
+                            <li>Ausztrália és Óceánia</li>
+                            <li>Antarktisz</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mx-auto mb-2 container container-kontinensek">
+                        <img src="../img/planets/Earth/continets.png" alt="A Föld kontinensei">
+                        <figcaption class="text-center">A Föld kontinensei</figcaption>                                            
+                    </div>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-legkor">
+                    <h2 class="text-center mx-4 mt-4">Légkör</h2>
+                    <p class="mx-4">
+                        A felszín közelében a Föld légkörének összetétele 78% nitrogén, 21% oxigén és 1% egyéb gáz, mint például az argon, a széb-dioxid és a neon. A légkör befolyásolja a Föld hosszútávú éghajlatát és rövidtávú helyi időjárását, ezen felül megvéd minket a Napból érkező káros sugárzás jelentős részétől. Megvéd minket a meteoroidoktól, melyek nagy része elég a légkörbe érve. Eztuán meteorként láthatóak az éjszakai égbolton, mielőtt meteoritként elérnék a földfelszínt.
+                    </p>
+                    <p class="mx-4"> 
+                        A Föld légkörét több rétegre tagolhatjuk, melyek lentről felfelé haladva a következők: A legalsó réteg a troposzféra. Ebben a rétegben található a légkör teljes tömegének 80%-a. Vastagsága változó. Az egyenlítőnél 16-18 km, míg a sarkokon 10 km vastagságú. Ezek mellett ebben a rétegben zajlik a legtöbb időjárási jelenség és a légköroptikai jelenségeket tekintve is a legmozgalmasabb terület. Hőmérséklete azonban felfelé haladva 1000 méterenként 6 °C-al csökken, így felső határánál a hőmérséklet -50 °C körül mozog.
+                    </p>
+                    <p class="mx-4">
+                        A troposzférát követi a sztratoszféra, mely a földfelszíntől számított 15-50 kilóméteres tartományt jelenti. A fent említett toposzférával ellentétben ebben a rétegben a magasság növekedésével a hőmérséklet is növekedésnek indul. Ennek oka, hogy a sztratoszféra magasabb rétegeiben az ózon elnyeli a Napból érkező UV-sugarakat, ezáltal megnövekedik a rétegek hőmérséklete. Ugyan átlaghőmérséklete, kellemesnek mondható -10 °C, azonban időjárása nagyon szélsőséges. Állandó, erős szelek fújnak és a levegő is rendkívül ritka. A sztatoszféra a légkör teljes tömegének 19%-át teszi ki. Itt helyezkedik el az ózonréteg is.
+                    </p>
+
+                    <div class="mx-auto mb-2 container container-legkor">
+                        <img src="../img/planets/Earth/atmosphereearth.jpg" alt="A Föld légkörének rétegei">
+                        <figcaption class="text-center">A Föld légkörének rétegei</figcaption>                                    
+                    </div>
+
+                    <p class="mx-4">
+                        A következő réteg, a mezoszféra a földfelszíntől számított 50-85 kilóméteres tartományba esik. A hőmérséklet itt ismét csökkeni kezd a magasság növekedésével arányosan. Felső határánál a mezopauzánál már -90 °C az uralkodó hőmérséklet. Ezzel ez a légkör leghidegebb rétege. A szemkápráztató sarki fény is ebben a rétegben keletkezik. Ezen felül világító felhőket is találhatunk, illetve itt villannak fel a meteorok is.
+                    </p>
+                    <p class="mx-4">
+                        A mezoszférát követi a légkör legszélesebb rétege a termoszféra, melynek vastagsága 600 km és felső határa a földlefszíntől számított 600-700 km körül található. Más néven ionoszférának is nevezik, ugyanis az itt található gázokat a Nap sugárzása ionizálja. A leggyakoribb gázok ebben a rétegben az oxigén és a nitrogén, ám a légkör többi rétegével ellentétben itt nem molekuláris, hanem atomi állapotban lelhetőek fel. Hőmérséklete a magassággal egyenes arányosságban növekszik, ám nagyban függ a napsugárzás mértékétől. Legmagasabb hőmérséklete 1500-2000 °c körül mozog.
+                    </p>
+                    <p class="mx-4">
+                        A földi légkör legfelső, legvékonyabb rétege az exoszféra, ami gyakorlatilag egy vékony, folyamatos átmenet a bolygóközi térbe. Felső határa nagyjából 10 000 km környékén található. Alsó rétegeiben az atomos hélium, felsőbb rétegeiben pedig a hidrogén az uralkodó.
+                    </p>        
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-magnetoszfera">
+                    <h2 class="text-center mx-4 mt-4">Magnetoszféra</h2>
+                    <p class="mx-4">
+                        Bolygónk, gyors forgásának és olvadt nikkel magjának köszönhetően képes maga körül mágneses mezőt generálni. Ez a mágneses mező egy mágneses dipólus. Hasonló, mint egy rúdmágnes által generált mező. A rendszer két pólusa megközelítőleg megyegyezik a földrajzi északi és déli pólussal. A két mágneses sarkot összekötő képzeletbeli tengely 11,3°-al tér el bolygónk forgástengelyétől. Ám ezek a mágneses sarkok nem stabilak. Évente átlagosan 15 kilómétert vándorolnak arrébb a földfelszínhez képest. A mező instabilitásának egyik jele a nagyjából 200 000 évente bekövetkező pólusváltás.
+                    </p>
+                    <p class="mx-4">
+                        Hawaii vulkánjainak megfigyeléséből származó, a kőzetekben megőrződött mágnesesség mérésein alapuló feltételezések szerint időről időre megváltozik a mágneses mező polaritása, a legutóbbi ilyen esemény 780 000 évvel ezelőtt következett be. A mágneses mező eredete feltételezhetően a bolygómagban létrejött dinamóhatás, melyben a mag olvadékának áramlása által létrejövő áramlatok elektromos áramot és mágneses mezőt indukálnak.
+                    </p>
+                    <p class="mx-4">
+                        A földmagban indukálódott mágneses mező rendkívül kiterjedt, a felszíntől több tízezer kilométerre elnyúló mágneses buborékot, az ún. magnetoszférát hozza létre bolygónk körül. A magnetoszféra alakja nem gömbszimmetrikus, hanem üstökösre hasonlít, mivel a napszél nyomása eltorzítja.
+                    </p>
+                    <p class="mx-4">
+                        A magnetoszféra védőburkot von a Föld köré, a sugárzások nagy részének kiszűrésével lehetővé tette az élet kialakulását és védelmezi azt a kezdetek óta. A magnetoszféra jelenlétére két kísérleti bizonyíték létezik. Az egyik a sarki fény, a világűrben a napszéllel áramló részecskék, légköri gázok ionizálása közben felszabaduló fotonok okozta fényjelenség, a mező erővonalai mentén. A másik az iránytű, egy eszköz, amelyben a tű a mágneses észak-déli irány felé áll be.
+                    </p>
+
+                    <div class="mx-auto mb-4 container cards">                        
+                        <div class="card">
+                            <img src="../img/planets/Earth/magnetosphereearth.jpg" alt="A Föld mágneses tere">
+                            <figcaption class="text-center">A Föld mágneses tere</figcaption>
+                        </div>                
+                        <div class="card">
+                            <img src="../img/planets/Earth/northenlights.jpg" alt="Sarki fény">
+                            <figcaption class="text-center">Sarki fény</figcaption>
+                        </div>                        
+                    </div>                    
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-elet">
+                    <h2 class="text-center mx-4 mt-4">Élet a bolygón</h2>
+                    <p class="mx-4">
+                        A Földön nagyon barátságos hőmérséklet és a kémiai anyagok összetétele, mely bőséges és változatos élővilág kialakulását segítette elő. Emellett a nagy mennyiségű folyékony formában megtalálható víz is rendkívül kedvező az élet kialakulásának. Mint azt mindenki tudja a Földön több ezer állatfaj megtalálható, kezdve az legapróbb rovaroktól, a változatos tengeri élőlényeken, halakon át, egészen a hatalmas emlősökig és nem utolsó sorban az eddig ismert egyetlen értelmes életformáig, az emberig. 
+                    </p>            
+                    <p class="mx-4">
+                        A Föld változatos élővilágáról egy végtelenségbe nyúló értekezést lehetne írni, és nagy valószínűséggel akkor sem érnénk a végére, mivel évente rengeteg új állatfajt fedeznek fel a tudósok. Néhány példa a fent említett őlőlényekre.
+                    </p>
+
+                    <div class="mx-auto mb-4 container cards-elet">                        
+                        <div class="card">
+                            <video src="../img/planets/Earth/Life/fish.mp4" autoplay muted loop></video>
+                            <figcaption class="text-center">Óceáni élővilág</figcaption>
+                        </div>                
+                        <div class="card">
+                            <video src="../img/planets/Earth/Life/birds.mp4" autoplay muted loop></video>
+                            <figcaption class="text-center">Madarak</figcaption>
+                        </div>
+                        <div class="card">
+                            <video src="../img/planets/Earth/Life/mammals.mp4" autoplay muted loop></video>
+                            <figcaption class="text-center">Emlősök</figcaption>
+                        </div> 
+                        <div class="card">
+                            <video src="../img/planets/Earth/Life/humans.mp4" autoplay muted loop></video>
+                            <figcaption class="text-center">Emberek</figcaption>
+                        </div>                      
+                    </div>  
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-holdak">
+                    <h2 class="text-center mx-4 mt-4">Holdak</h2>
+                    <p class="mx-4">
+                        A Föld egyetlen holddal rendelkezik, amit mindanyian jól ismerünk. Ám azt is tudjátok, hogyan alakult ki az úgynevezett Föld-Hold rendszer? Nos a magyarázat erre a következő:
+                    </p>
+                    <p class="mx-4">
+                        A Hold kialakulására ma a legelfogadottabb elmélet szerint közvetlenül a Föld létrejöttét követően került sor, mikoris egy körülbelül Mars-méretű test ütközött a fiatal Földbe. Az ütközés során szétszóródó törmelék először gyűrűt alkotott, majd ebből a törmelékhalmazból a gravitáció hatására összeállt a ma Holdként ismert égitest. Ezen elmélet hitelességét támasztja alá a Hold összetételére és szerkezetére vonatkozó adatok is.
+                    </p>
+                    <p class="mx-4">
+                        A Föld és a Hold méretüket tekintve inkább kettősbolygónak mondhatóak, mivel a Hold körülbelül negyedakkora mint a Föld. A Naprendszerben csak a Plútó és a Charon között van hasonló arány. Éppen ezért a Hold mindig is jelentős hatást gyakorolt a Földre. Ennek a legszemléletesebb formája az ár-apály jelenség. A Hold mai átlagos távolsága a Földtől 384 400 km, viszont mérések alapján ez a távolság 34 millió évvel ezelőtt 338 000 km volt. Ebből könnyen kiszámolhatjuk, hogy a Hold évente nagyjából 3 cm-t távolodik bolygónktól.
+                    </p>
+                    <p class="mx-4">
+                        Égi kísérőnk eliptikus pályán kering a Föld körül, ezért távolságuk nem mindig egyenlő. Amikor a legközelebb van hozzánk a Hold, 10%-al van közelebb, mint legtávolabbi pontján. A Hold keringése kötött. Ez azt jelenti, hogy holdunk ugyanannyi idő alatt fordul meg saját tengelye körül, mint amennyi egy Föld körüli keringés ideje. Ez azt eredményezi, hogy a Földről, mindig a Hold ugyanazon oldala látszik.
+                    </p>
+
+                    <model-viewer class="mx-auto merkurModell" src="../3D/moon.glb" camera-controls alt="A Hold 3D-s modellje"></model-viewer>
+                    <figcaption class="mb-4 text-center">A Hold 3D-s modellje</figcaption>
+
+                    <p class="mx-4">
+                        A Hold felszínét a kialakulása utáni rövid periódusban a meteoritok porrá zúzták légkör hiányában. Ez a felszín több méter vastag. Legfelsőbb rétege a napszélből érkezett hidrogénatomokkal telített. Távolról rátekintve a Holdram világosan megkülönböztethetőek nagy sötét síkságok (mare-ek) és világos, erősen kráterezett felföldi régiók. Előbbire példa a Mare Crisium, melynek átmérője 563 km.
+                    </p>
+                    <p class="mx-4">
+                        A Holdnak gyakorlatilag nincs légköre, a jelenlévő gázok teljes tömege mindössze 10000 kg. Mivel kicsi a tömege, a gázok folyamatosan elillannak, s csak a napszél pótolja őket. A légkör összetétele: neon 29%, hélium 25,8%, hidrogén 22,6%, argon 20,6% és egyéb gázok nyomokban.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="section-gyuruk">
+                    <h2 class="text-center mx-4 mt-4">Gyűrűk</h2>
+                    <p class="mx-4 text-center">
+                        A Föld nem rendelkezik gyűrűkkel.
+                    </p>
+                </section>
+
+                <section class="triangle-divider"></section>
+
+                <section class="osszefoglalo-video">
+                    <h2 class="text-center mx-4 mt-4">Összefoglaló videó</h2>
+                    <p class="mx-4 text-center">
+                        Elérkeztünk fejezetünk végére, melyben a Földről tudhattunk meg többet. Most pedig kérlek benneteket tekintsétek meg az Űrkutatás Magyarul youtube csatorna videóját, melyben egy velős minden igényt kielégítő bemutatót láthattok szülőbolygónkról.
+                    </p>
+                    <div class="mx-auto osszefoglalo-container">
+                        <iframe src="https://www.youtube.com/embed/watch?v=JUnjiIjFL7Y&list=PLP33AR3c0LjvyPiSmWXuIAMvI2Y5mwsIc&index=4" frameborder="0" id="osszefoglaloVideo"></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <footer class="text-center text-white footer-custom">
+            <div class="social-media-container">
+                <a class="btn btn-floating m-1" href="https://www.facebook.com/urkutatasmagyarul/" role="button">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.instagram.com/nasa/" role="button">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="btn btn-floating m-1" href="https://www.youtube.com/c/%C5%B0rkutat%C3%A1smagyarul"
+                    role="button">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="text-center p-3">
+                2022 A weboldalt készítette:
+                <a class="text-white" href="">Pokol László</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>
