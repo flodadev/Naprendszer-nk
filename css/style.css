@@ -399,6 +399,34 @@ i{
   padding-bottom: 20px;
 }
 
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows:  repeat(2,auto);
+  grid-gap: 10px;
+}
+
+.gallery_vid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(min-width:1200px){
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(1,450px);
+    grid-gap: 10px;
+  }
+  
+  .gallery_vid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
