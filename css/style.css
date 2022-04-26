@@ -619,6 +619,43 @@ i{
     width: 100%;
   }
 }
+
+#pt-2{
+  padding-top: 10px;
+}
+
+#container-quiz{
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+#answer-container{
+  width: fit-content;
+  padding: 10px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.buttonAnswer{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#valaszA:focus{
+  background-color: green;
+}
+
+#valaszB:focus,
+#valaszC:focus,
+#valaszD:focus{
+  background-color: red;
+}
 /*------------------------------IFRAME-BY-RESOLUTION------------------------------*/
 
 /*------------SLIDER------------*/
