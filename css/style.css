@@ -643,8 +643,9 @@ i{
   color: #fff;
   text-decoration: none;
   text-shadow: none;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 200px;
 }
 
 #valaszA:focus{
@@ -656,6 +657,14 @@ i{
 #valaszD:focus{
   background-color: red;
 }
+
+#answer-container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*------------------------------IFRAME-BY-RESOLUTION------------------------------*/
 
 /*------------SLIDER------------*/
